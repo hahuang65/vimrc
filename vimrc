@@ -205,4 +205,5 @@ Bundle 'airblade/vim-gitgutter'
 " Gitgutter {
   " Enable by default
   let g:gitgutter_highlight_lines = 1
+  let g:gitgutter_diff_args = '-w'
 " }
