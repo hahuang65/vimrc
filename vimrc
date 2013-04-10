@@ -109,6 +109,7 @@ Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-fugitive'
 Bundle 'scrooloose/syntastic'
 Bundle 'kien/ctrlp.vim'
+Bundle 'airblade/vim-gitgutter'
 
 " Fugitive {
   nnoremap <silent> <leader>gs :Gstatus<CR>
@@ -199,4 +200,9 @@ Bundle 'kien/ctrlp.vim'
     \ 'file' : '\v\.(exe|so|dll)$',
     \ 'link' : 'some_bad_symbolic_links',
   \ }
+" }
+
+" Gitgutter {
+  " Enable by default
+  let g:gitgutter_highlight_lines = 1
 " }
