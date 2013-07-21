@@ -1,6 +1,5 @@
+ctrlp.vim
 neobundle.vim
 nerdtree
 scratch.vim
-unite.vim
 vim-powerline
-vimproc

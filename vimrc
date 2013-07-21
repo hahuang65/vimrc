@@ -9,10 +9,9 @@ NeoBundleFetch 'shougo/neobundle.vim'
 
 " NeoBundle bundles
 NeoBundle 'lokaltog/vim-powerline'
-NeoBundle 'shougo/vimproc'
-NeoBundle 'shuogo/unite.vim'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'vim-scripts/scratch.vim'
+NeoBundle 'kien/ctrlp.vim'
 
 " Use Vim settings rather than Vi settings. Must be first, it affects other options
 set nocompatible
@@ -133,5 +132,14 @@ let g:Powerline_symbols = 'fancy'
 " NERDTree
 map <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
 
-" Unite.vim
-nnoremap <leader>t :Unite file_rec/async<CR>
+" CtrlP
+map <leader>t :CtrlP<CR>
+map <leader>b :CtrlPBuffer<CR>
+let g:ctrlp_working_path_mode = 'ra'
+let g:ctrlp_match_window = 'top,order:ttb,min:1,max:10'
+let g:ctrlp_use_caching = 0
+let g:ctrlp_custom_ignore = {
+    \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+    \ 'file': '\v\.(exe|so|dll)$',
+    \ }
+set wildignore+=*/tmp/*,*/doc/*,*/docs/*,*/log/*,*/extdoc*/*,*.so,*.swp,*.zip     " MacOSX/Linux
