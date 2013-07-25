@@ -8,10 +8,13 @@ call neobundle#rc(expand('~/.vim/bundle/'))
 NeoBundleFetch 'shougo/neobundle.vim'
 
 " NeoBundle bundles
-NeoBundle 'lokaltog/vim-powerline'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'vim-scripts/scratch.vim'
 NeoBundle 'kien/ctrlp.vim'
+NeoBundle 'mileszs/ack.vim'
+NeoBundle 'bling/vim-airline'
+NeoBundle 'takac/vim-hardtime'
+NeoBundle 'troydm/easybuffer.vim'
 
 " Use Vim settings rather than Vi settings. Must be first, it affects other options
 set nocompatible
@@ -125,9 +128,16 @@ function! TrimWhiteSpace()
 endfunction
 autocmd BufWritePre * :call TrimWhiteSpace()
 
-" Powerline
+" Airline
 set t_Co=256
-let g:Powerline_symbols = 'fancy'
+let g:airline_powerline_fonts = 1
+let g:airline_left_sep = '⮀'
+let g:airline_left_alt_sep = '⮁'
+let g:airline_right_sep = '⮂'
+let g:airline_right_alt_sep = '⮃'
+let g:airline_fugitive_prefix = '⭠'
+let g:airline_readonly_symbol = '⭤'
+let g:airline_linecolumn_prefix = '⭡'
 
 " NERDTree
 map <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
@@ -143,3 +153,9 @@ let g:ctrlp_custom_ignore = {
     \ 'file': '\v\.(exe|so|dll)$',
     \ }
 set wildignore+=*/tmp/*,*/doc/*,*/docs/*,*/log/*,*/extdoc*/*,*.so,*.swp,*.zip     " MacOSX/Linux
+
+" HardTime
+let g:hardtime_default_on = 1
+
+" EasyBuffer
+noremap <leader>b :EasyBuffer<CR>

@@ -1,5 +1,6 @@
+ack.vim
 ctrlp.vim
 neobundle.vim
 nerdtree
 scratch.vim
-vim-powerline
+vim-airline
