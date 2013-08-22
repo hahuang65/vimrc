@@ -1,6 +1,10 @@
 ack.vim
 ctrlp.vim
+easybuffer.vim
+indentLine
 neobundle.vim
 nerdtree
 scratch.vim
 vim-airline
+vim-hardtime
+vim-scala

@@ -15,6 +15,8 @@ NeoBundle 'mileszs/ack.vim'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'takac/vim-hardtime'
 NeoBundle 'troydm/easybuffer.vim'
+NeoBundle 'derekwyatt/vim-scala'
+NeoBundle 'Yggdroot/indentLine'
 
 " Use Vim settings rather than Vi settings. Must be first, it affects other options
 set nocompatible
@@ -23,7 +25,7 @@ filetype plugin indent on
 
 " Solarized
 let g:solarized_termtrans = 1
-color Solarized
+colorscheme Solarized
 set background=dark
 
 " Show line numbers
@@ -58,6 +60,9 @@ set hlsearch
 
 " Set softtabs with 2 spaces
 set tabstop=2 softtabstop=2 shiftwidth=2 expandtab
+
+" indentLine configuration
+let g:indentLine_char = '│'
 
 " Be smart with tabs
 set smarttab
@@ -103,8 +108,26 @@ set scrolloff=20
 set cursorline
 hi CursorLine cterm=none ctermbg=black
 
+" Splits
+set splitbelow
+set splitright
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
 let mapleader = ","
 imap jj <Esc>
+
+" Disable arrow keys.
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+imap <up> <nop>
+imap <down> <nop>
+imap <left> <nop>
+imap <right> <nop>
 
 " Yank text to the OS X clipboard
 noremap <leader>y "*y
@@ -112,6 +135,18 @@ noremap <leader>yy "*Y
 
 " Preserve indentation while pasting text from the OS X clipboard
 noremap <leader>p :set paste<CR>:put  *<CR>:set nopaste<CR>
+
+" Highlight cursor line.
+augroup CursorLine
+  au!
+  au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
+  au VimEnter,WinEnter,BufWinEnter * setlocal cursorcolumn
+  au WinLeave * setlocal nocursorline
+  au WinLeave * setlocal nocursorcolumn
+augroup END
+
+" Automatically leave insert mode after 'updatetime' (4s by default).
+au CursorHoldI * stopinsert
 
 " Highlight and show trailing whitespace, and delete it on save, and on buffer change
 highlight ExtraWhitespace ctermbg=red guibg=red
