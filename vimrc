@@ -17,6 +17,8 @@ NeoBundle 'takac/vim-hardtime'
 NeoBundle 'troydm/easybuffer.vim'
 NeoBundle 'derekwyatt/vim-scala'
 NeoBundle 'Yggdroot/indentLine'
+NeoBundle 'rking/ag.vim'
+NeoBundle 'Lokaltog/vim-easymotion'
 
 " Use Vim settings rather than Vi settings. Must be first, it affects other options
 set nocompatible
@@ -30,6 +32,9 @@ set background=dark
 
 " Show line numbers
 set number
+
+" Shellpipe
+set shellpipe=2>/dev/null>
 
 " Automatically indent
 set autoindent

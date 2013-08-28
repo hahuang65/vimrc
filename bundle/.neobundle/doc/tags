@@ -73,11 +73,6 @@
 'g:ctrlp_working_path_mode'	ctrlp.txt	/*'g:ctrlp_working_path_mode'*
 'g:loaded_ctrlp'	ctrlp.txt	/*'g:loaded_ctrlp'*
 'loaded_nerd_tree'	NERD_tree.txt	/*'loaded_nerd_tree'*
-:Ack	ack.txt	/*:Ack*
-:AckAdd	ack.txt	/*:AckAdd*
-:AckFile	ack.txt	/*:AckFile*
-:AckFromSearch	ack.txt	/*:AckFromSearch*
-:AckHelp	ack.txt	/*:AckHelp*
 :AirlineTheme	airline.txt	/*:AirlineTheme*
 :CtrlP	ctrlp.txt	/*:CtrlP*
 :CtrlPBookmarkDir	ctrlp.txt	/*:CtrlPBookmarkDir*
@@ -99,9 +94,6 @@
 :CtrlPRoot	ctrlp.txt	/*:CtrlPRoot*
 :CtrlPTag	ctrlp.txt	/*:CtrlPTag*
 :CtrlPUndo	ctrlp.txt	/*:CtrlPUndo*
-:LAck	ack.txt	/*:LAck*
-:LAckAdd	ack.txt	/*:LAckAdd*
-:LAckHelp	ack.txt	/*:LAckHelp*
 :NERDTree	NERD_tree.txt	/*:NERDTree*
 :NERDTreeCWD	NERD_tree.txt	/*:NERDTreeCWD*
 :NERDTreeClose	NERD_tree.txt	/*:NERDTreeClose*
@@ -200,10 +192,6 @@ NERDTreeOptions	NERD_tree.txt	/*NERDTreeOptions*
 NERDTreeRender()	NERD_tree.txt	/*NERDTreeRender()*
 NERD_tree.txt	NERD_tree.txt	/*NERD_tree.txt*
 ResetCtrlP	ctrlp.txt	/*ResetCtrlP*
-ack	ack.txt	/*ack*
-ack-author	ack.txt	/*ack-author*
-ack-mappings	ack.txt	/*ack-mappings*
-ack.txt	ack.txt	/*ack.txt*
 airline	airline.txt	/*airline*
 airline-commands	airline.txt	/*airline-commands*
 airline-configuration	airline.txt	/*airline-configuration*
