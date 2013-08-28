@@ -79,8 +79,15 @@ set showmatch
 " Blink every 2/10 of a second
 set mat=2
 
-" Don't wrap lines
+" Don't wrap lines visually
 set nowrap
+
+" Don't wrap lines physically (auto insertion of newlines)
+set textwidth=0 wrapmargin=0
+set linebreak
+set nolist  " list disables linebreak
+set sidescroll=5
+set listchars+=precedes:<,extends:>
 
 " Syntax highlighting
 syntax enable
