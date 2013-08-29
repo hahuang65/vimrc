@@ -33,9 +33,6 @@ set background=dark
 " Show line numbers
 set number
 
-" Shellpipe
-set shellpipe=2>/dev/null>
-
 " Automatically indent
 set autoindent
 
@@ -148,14 +145,14 @@ noremap <leader>yy "*Y
 " Preserve indentation while pasting text from the OS X clipboard
 noremap <leader>p :set paste<CR>:put  *<CR>:set nopaste<CR>
 
-" Highlight cursor line.
-augroup CursorLine
-  au!
-  au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
-  au VimEnter,WinEnter,BufWinEnter * setlocal cursorcolumn
-  au WinLeave * setlocal nocursorline
-  au WinLeave * setlocal nocursorcolumn
-augroup END
+" Highlight cursor line. Laggy shit.
+" augroup CursorLine
+"   au!
+"   au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
+"   au VimEnter,WinEnter,BufWinEnter * setlocal cursorcolumn
+"   au WinLeave * setlocal nocursorline
+"   au WinLeave * setlocal nocursorcolumn
+" augroup END
 
 " Automatically leave insert mode after 'updatetime' (4s by default).
 au CursorHoldI * stopinsert
