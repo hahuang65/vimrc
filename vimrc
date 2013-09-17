@@ -125,7 +125,7 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-let mapleader = "'"
+let mapleader = ","
 imap jj <Esc>
 
 " Disable arrow keys.
@@ -155,7 +155,7 @@ noremap <leader>p :set paste<CR>:put  *<CR>:set nopaste<CR>
 " augroup END
 
 " Automatically leave insert mode after 'updatetime' (4s by default).
-au CursorHoldI * stopinsert
+" au CursorHoldI * stopinsert
 
 " Highlight and show trailing whitespace, and delete it on save, and on buffer change
 highlight ExtraWhitespace ctermbg=red guibg=red
@@ -182,6 +182,7 @@ let g:airline_right_alt_sep = '⮃'
 let g:airline_fugitive_prefix = '⭠'
 let g:airline_readonly_symbol = '⭤'
 let g:airline_linecolumn_prefix = '⭡'
+let g:airline#extensions#tabline#enabled = 1
 
 " NERDTree
 map <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
