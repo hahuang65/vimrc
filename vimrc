@@ -227,7 +227,11 @@ function! MyModified()
 endfunction
 
 function! MyFugitive()
-  return exists('*fugitive#head') ? fugitive#head() : ''
+  if exists("*fugitive#head")
+    let _ = fugitive#head()
+    return strlen(_) ? '⭠ '._ : ''
+  endif
+  return ''
 endfunction
 
 " NERDTree
