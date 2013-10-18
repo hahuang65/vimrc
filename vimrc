@@ -12,13 +12,14 @@ NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'vim-scripts/scratch.vim'
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'mileszs/ack.vim'
-NeoBundle 'bling/vim-airline'
+NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'takac/vim-hardtime'
 NeoBundle 'troydm/easybuffer.vim'
 NeoBundle 'derekwyatt/vim-scala'
 NeoBundle 'Yggdroot/indentLine'
 NeoBundle 'rking/ag.vim'
 NeoBundle 'Lokaltog/vim-easymotion'
+NeoBundle 'tpope/vim-fugitive'
 
 " Use Vim settings rather than Vi settings. Must be first, it affects other options
 set nocompatible
@@ -32,6 +33,9 @@ set background=dark
 
 " Show line numbers
 set number
+
+" Show relative line numbers
+set relativenumber
 
 " Automatically indent
 set autoindent
@@ -173,16 +177,58 @@ endfunction
 autocmd BufWritePre * :call TrimWhiteSpace()
 
 " Airline
-set t_Co=256
-let g:airline_powerline_fonts = 1
-let g:airline_left_sep = '⮀'
-let g:airline_left_alt_sep = '⮁'
-let g:airline_right_sep = '⮂'
-let g:airline_right_alt_sep = '⮃'
-let g:airline_fugitive_prefix = '⭠'
-let g:airline_readonly_symbol = '⭤'
-let g:airline_linecolumn_prefix = '⭡'
-let g:airline#extensions#tabline#enabled = 1
+" set t_Co=256
+" let g:airline_powerline_fonts = 1
+" let g:airline_left_sep = '⮀'
+" let g:airline_left_alt_sep = '⮁'
+" let g:airline_right_sep = '⮂'
+" let g:airline_right_alt_sep = '⮃'
+" let g:airline_fugitive_prefix = '⭠'
+" let g:airline_readonly_symbol = '⭤'
+" let g:airline_linecolumn_prefix = '⭡'
+" let g:airline#extensions#tabline#enabled = 1
+
+" Lightline
+let g:lightline = {
+  \ 'colorscheme': 'solarized',
+  \ 'active': {
+  \   'left': [ [ 'mode', 'paste' ],
+  \             [ 'fugitive', 'readonly', 'filename', 'modified'] ],
+  \ },
+  \ 'component_function': {
+  \   'readonly': 'MyReadOnly',
+  \   'modified': 'MyModified',
+  \   'fugitive': 'MyFugitive',
+  \ },
+  \ 'separator': { 'left': '⮀', 'right': '⮂' },
+  \ 'subseparator': { 'left': '⮁', 'right': '⮃' }
+  \ }
+
+function! MyReadOnly()
+  if &filetype == "help"
+    return ""
+  elseif &readonly
+    return "⭤"
+  else
+    return ""
+  endif
+endfunction
+
+function! MyModified()
+  if &filetype == "help"
+    return ""
+  elseif &modified
+    return "+"
+  elseif &modifiable
+    return ""
+  else
+    return ""
+  endif
+endfunction
+
+function! MyFugitive()
+  return exists('*fugitive#head') ? fugitive#head() : ''
+endfunction
 
 " NERDTree
 map <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
@@ -201,7 +247,7 @@ let g:ctrlp_custom_ignore = {
 set wildignore+=*/tmp/*,*/doc/*,*/docs/*,*/log/*,*/extdoc*/*,*.so,*.swp,*.zip     " MacOSX/Linux
 
 " HardTime
-let g:hardtime_default_on = 1
+" let g:hardtime_default_on = 1
 
 " EasyBuffer
 noremap <leader>b :EasyBuffer<CR>
