@@ -1,4 +1,4 @@
 " Solarized
-colorscheme seoul256
-set background=dark
+" colorscheme seoul256
+" set background=dark
 
