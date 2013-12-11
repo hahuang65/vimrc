@@ -45,5 +45,6 @@ Bundle "nelstrom/vim-textobj-rubyblock"
 
 " Cosmetics, color scheme, Powerline...
 Bundle "chrisbra/color_highlight.git"
-Bundle "skwp/vim-colors-solarized"
+" Bundle "skwp/vim-colors-solarized"
+Bundle "junegunn/seoul256.vim"
 Bundle 'itchyny/lightline.vim'
