@@ -36,6 +36,7 @@ Bundle 'Yggdroot/indentLine'
 Bundle 'troydm/easybuffer.vim'
 Bundle 'vim-scripts/scratch.vim'
 Bundle 'tpope/vim-fugitive'
+Bundle 'Keithbsmiley/investigate.vim'
 
 " Text objects
 Bundle "kana/vim-textobj-user"
