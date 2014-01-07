@@ -22,16 +22,16 @@ Bundle "gmarik/vundle"
 Bundle 'derekwyatt/vim-scala'
 
 " General text editing improvements...
-Bundle "vim-scripts/IndexedSearch"
-Bundle "vim-scripts/matchit.zip.git"
-Bundle "terryma/vim-multiple-cursors"
+Bundle 'vim-scripts/IndexedSearch'
+Bundle 'vim-scripts/matchit.zip.git'
+Bundle 'terryma/vim-multiple-cursors'
 Bundle 'Lokaltog/vim-easymotion'
 
 " General vim improvements
-Bundle "kien/ctrlp.vim"
-Bundle "rking/ag.vim"
-Bundle "scrooloose/nerdtree.git"
-Bundle "terryma/vim-multiple-cursors"
+Bundle 'kien/ctrlp.vim'
+Bundle 'rking/ag.vim'
+Bundle 'scrooloose/nerdtree.git'
+Bundle 'terryma/vim-multiple-cursors'
 Bundle 'Yggdroot/indentLine'
 Bundle 'troydm/easybuffer.vim'
 Bundle 'vim-scripts/scratch.vim'
@@ -39,13 +39,15 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'Keithbsmiley/investigate.vim'
 
 " Text objects
-Bundle "kana/vim-textobj-user"
-Bundle "bootleq/vim-textobj-rubysymbol"
-Bundle "coderifous/textobj-word-column.vim"
-Bundle "nelstrom/vim-textobj-rubyblock"
+Bundle 'kana/vim-textobj-user'
+Bundle 'bootleq/vim-textobj-rubysymbol'
+Bundle 'coderifous/textobj-word-column.vim'
+Bundle 'nelstrom/vim-textobj-rubyblock'
 
 " Cosmetics, color scheme, Powerline...
-Bundle "chrisbra/color_highlight.git"
-Bundle "skwp/vim-colors-solarized"
-" Bundle "junegunn/seoul256.vim"
-Bundle 'itchyny/lightline.vim'
+Bundle 'chrisbra/color_highlight.git'
+" Bundle 'skwp/vim-colors-solarized'
+" Bundle 'junegunn/seoul256.vim'
+" Bundle 'itchyny/lightline.vim'
+Bundle 'chriskempson/base16-vim'
+" Bundle 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
