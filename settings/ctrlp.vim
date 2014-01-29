@@ -1,7 +1,6 @@
 " CtrlP
 map <leader>t :CtrlP<CR>
 map <leader>T :ClearCtrlPCache<CR>\|:CtrlP<CR>
-map <leader>b :CtrlPBuffer<CR>
 let g:ctrlp_match_window = 'top,order:ttb,min:1,max:10'
 
 " Change how CtrlP works based on if Ag is available
