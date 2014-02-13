@@ -48,6 +48,6 @@ Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'chrisbra/color_highlight.git'
 " Bundle 'skwp/vim-colors-solarized'
 " Bundle 'junegunn/seoul256.vim'
-" Bundle 'itchyny/lightline.vim'
+Bundle 'itchyny/lightline.vim'
 Bundle 'chriskempson/base16-vim'
 " Bundle 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}

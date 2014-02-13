@@ -3,7 +3,6 @@
 set nocompatible
 
 " Filetype settings are required by vundle
-
 filetype off
 filetype plugin on
 filetype indent on
@@ -12,7 +11,7 @@ filetype indent on
 let mapleader = ","
 
 " Remap <Esc>
-imap jj <Esc>
+inoremap jj <Esc>
 
 " =============== Vundle Initialization ===============
 " This loads all the plugins specified in ~/.dotfiles/vim/vundle.vim
@@ -37,10 +36,10 @@ set encoding=utf-8                  " Force UTF-8 as standard encoding
 set ffs=unix,dos,mac                " Unix as the standard file type
 set laststatus=2                    " Always show the statusline
 set number                          " Show line numbers
-set relativenumber                  " Show relative line numbers
+" set relativenumber                " Show relative line numbers, causes slowness.
 
 " Highlight the current line
-set cursorline
+" set cursorline
 hi CursorLine cterm=none ctermbg=black
 
 " The current buffer can be put to the background without writing to disk;
@@ -77,7 +76,6 @@ set tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 " Don't wrap lines physically (auto insertion of newlines)
 set nowrap       "Don't wrap lines
 set textwidth=0 wrapmargin=0
-set linebreak
 set nolist  " list disables linebreak
 set sidescroll=5
 set listchars+=precedes:<,extends:>
@@ -129,14 +127,14 @@ nnoremap <C-H> <C-W><C-H>
 " ================ Movement ========================
 
 " Disable arrow keys.
-map <up> <nop>
-map <down> <nop>
-map <left> <nop>
-map <right> <nop>
-imap <up> <nop>
-imap <down> <nop>
-imap <left> <nop>
-imap <right> <nop>
+noremap <up> <nop>
+noremap <down> <nop>
+noremap <left> <nop>
+noremap <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
 
 " ================ Copy and Paste ========================
 
