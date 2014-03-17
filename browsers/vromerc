@@ -1,5 +1,4 @@
 " Navigation bindings
-imap jj <Esc>
 map j 5j
 map k 5k
 map <M-d> <C-d>
