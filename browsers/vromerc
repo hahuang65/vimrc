@@ -1,0 +1,12 @@
+" Make hint links more noticeable and use letters
+:highlight Hint font-size:125%;color:white;background-color:red;padding:2px;
+:set hintchars=hjklasdfgyuopqwertnmzxcvb
+
+" Navigation bindings
+imap jj <Esc>
+map j 5j
+map k 5k
+map <M-d> <C-d>
+map <M-u> <C-u>
+map <M-k> gT
+map <M-j> gt
