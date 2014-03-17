@@ -1,0 +1,34 @@
+" Change the titlestring
+set titlestring="Firefox"
+
+" Set default search to Google
+set defsearch=google
+
+" Open everything in tabs
+set newtab=all
+set popups=tab
+
+" Casing and Search options
+set ignorecase
+set incsearch
+set smartcase
+
+" Visual Bell
+set visualbell
+
+" Only show tab bar
+set toolbars=noaddons,nobookmarks,nomenu,nonavigation,tabs
+
+" Make hint links more noticeable and use letters
+:highlight Hint font-size:125%;color:white;background-color:red;padding:2px;
+:set hintchars=hjklasdfgyuopqwertnmzxcvb
+
+" Navigation bindings
+inoremap jj <Esc>
+noremap j 5j
+noremap k 5k
+noremap x d
+noremap d <C-d>
+noremap u <C-u>
+noremap <M-[> <C-p>
+noremap <M-]> <C-n>
