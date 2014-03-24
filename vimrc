@@ -8,7 +8,7 @@ filetype plugin on
 filetype indent on
 
 " Map the leader key. Must happen before Vundle so all the settings can be set accordingly.
-let mapleader = ","
+let mapleader = " "
 
 " Remap <Esc>
 inoremap jj <Esc>
@@ -136,6 +136,9 @@ inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
 
+" Let Return function like G so that 12<CR> works like 12G
+nnoremap <CR> G
+
 " ================ Copy and Paste ========================
 
 " Yank text to the OS X clipboard
@@ -143,7 +146,30 @@ noremap <leader>y "*y
 noremap <leader>yy "*Y
 
 " Preserve indentation while pasting text from the OS X clipboard
-noremap <leader>p :set paste<CR>:put  *<CR>:set nopaste<CR>
+noremap <leader>p :set paste<CR>:put *<CR>:set nopaste<CR>
+
+" Jump to end of pasted text
+vnoremap <silent> y y`]
+vnoremap <silent> p p`]
+nnoremap <silent> p p`]
+
+" Prevent pasting from trouncing paste buffer
+function! RestoreRegister()
+  let @" = s:restore_reg
+  return ''
+endfunction
+function! s:Repl()
+  let s:restore_reg = @"
+  return "p@=RestoreRegister()\<CR>"
+endfunction
+vmap <silent> <expr> p <sid>Repl()
+
+" Select text that was just pasted
+noremap gV `[v`]
+
+" ================ Saving ================================
+
+nnoremap <leader>w :w<CR>
 
 " ================ Custom Settings ========================
 

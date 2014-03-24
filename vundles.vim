@@ -43,6 +43,7 @@ Bundle 'kana/vim-textobj-user'
 Bundle 'bootleq/vim-textobj-rubysymbol'
 Bundle 'coderifous/textobj-word-column.vim'
 Bundle 'nelstrom/vim-textobj-rubyblock'
+Bundle 'terryma/vim-expand-region'
 
 " Cosmetics, color scheme, Powerline...
 Bundle 'chrisbra/color_highlight.git'
