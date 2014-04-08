@@ -37,6 +37,7 @@ Bundle 'troydm/easybuffer.vim'
 Bundle 'vim-scripts/scratch.vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'Keithbsmiley/investigate.vim'
+Bundle 'christoomey/vim-tmux-navigator'
 
 " Text objects
 Bundle 'kana/vim-textobj-user'
