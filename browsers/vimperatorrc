@@ -16,12 +16,12 @@ set smartcase
 " Visual Bell
 set visualbell
 
-" Only show tab bar
-set toolbars=noaddons,nobookmarks,nomenu,nonavigation,tabs
+" No toolbars
+set toolbars=noaddons,nobookmarks,nomenu,nonavigation,notabs
 
 " Make hint links more noticeable and use letters
-:highlight Hint font-size:125%;color:white;background-color:red;padding:2px;
-:set hintchars=hjklasdfgyuopqwertnmzxcvb
+:highlight Hint font-size:110%;color:white;background-color:blue;padding:2px;
+:set hintchars=asdfghjkl
 
 " Navigation bindings
 inoremap jj <Esc>
