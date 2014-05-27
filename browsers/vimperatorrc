@@ -17,7 +17,7 @@ set smartcase
 set visualbell
 
 " No toolbars
-set toolbars=noaddons,nobookmarks,nomenu,nonavigation,notabs
+set toolbars=noaddons,nobookmarks,nomenu,nonavigation
 
 " Make hint links more noticeable and use letters
 :highlight Hint font-size:110%;color:white;background-color:blue;padding:2px;
