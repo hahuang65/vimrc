@@ -39,7 +39,7 @@ set number                          " Show line numbers
 set guioptions-=r                   " Remove scrollbar for GUI Vim.
 
 " Highlight the current line
-" set cursorline
+set cursorline
 hi CursorLine cterm=none ctermbg=black
 
 " The current buffer can be put to the background without writing to disk;
@@ -119,10 +119,10 @@ set sidescroll=1
 
 set splitbelow
 set splitright
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
+nnoremap <C-j> <C-W><C-J>
+nnoremap <C-k> <C-W><C-K>
+nnoremap <C-l> <C-W><C-L>
+nnoremap <C-h> <C-W><C-H>
 
 " ================ Movement ========================
 
