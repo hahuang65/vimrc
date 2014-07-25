@@ -20,6 +20,7 @@ Bundle "gmarik/vundle"
 
 " Languages
 Bundle 'derekwyatt/vim-scala'
+Bundle 'dag/vim-fish'
 
 " General text editing improvements...
 Bundle 'vim-scripts/IndexedSearch'
