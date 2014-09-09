@@ -24,7 +24,6 @@ set toolbars=noaddons,nobookmarks,nomenu,nonavigation
 :set hintchars=asdfghjkl
 
 " Navigation bindings
-inoremap jj <Esc>
 noremap j 5j
 noremap k 5k
 noremap x d
