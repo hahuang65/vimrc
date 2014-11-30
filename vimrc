@@ -44,6 +44,11 @@ hi CursorLine cterm=none ctermbg=black
 " http://items.sjbach.com/319/configuring-vim-right
 set hidden
 
+" ================ Dir specific vimrc ===============
+
+set exrc            " enable per-directory .vimrc files
+set secure          " disable unsafe commands in local .vimrc files
+
 " ================ Turn Off Swap Files ==============
 
 set noswapfile
