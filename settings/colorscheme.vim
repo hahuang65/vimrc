@@ -1,6 +1,6 @@
 " Base 16 Flat
-colorscheme base16-flat
-set background=dark
+" colorscheme base16-flat
+" set background=dark
 
 " Base 16 Eighties
 colorscheme base16-eighties
