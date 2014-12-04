@@ -1,6 +1,9 @@
+" Base 16 Flat
+colorscheme base16-flat
+set background=dark
+
 " Base 16 Eighties
 colorscheme base16-eighties
-let base16colorspace=256
 set background=dark
 
 " Tomorrow Night Eighties
