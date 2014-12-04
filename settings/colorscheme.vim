@@ -1,5 +1,6 @@
 " Base 16 Eighties
 colorscheme base16-eighties
+let base16colorspace=256
 set background=dark
 
 " Tomorrow Night Eighties
