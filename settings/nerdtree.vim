@@ -1,2 +1,2 @@
 " NERDTree
-map <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
+map <leader>n :execute 'NERDTreeToggle ' . getcwd()<CR>
