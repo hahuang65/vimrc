@@ -41,6 +41,7 @@ Bundle 'vim-scripts/scratch.vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'Keithbsmiley/investigate.vim'
 Bundle 'christoomey/vim-tmux-navigator'
+Bundle 'airblade/vim-gitgutter'
 
 " Text objects
 Bundle 'kana/vim-textobj-user'
