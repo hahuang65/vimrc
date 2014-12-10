@@ -29,6 +29,7 @@ Bundle 'vim-scripts/matchit.zip.git'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-commentary'
 
 " General vim improvements
 Bundle 'kien/ctrlp.vim'
