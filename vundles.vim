@@ -4,56 +4,57 @@
 "
 " This file contains the list of plugin installed using vundle plugin manager.
 " Once you've updated the list of plugin, you can run vundle update by issuing
-" the command :BundleInstall from within vim or directly invoking it from the
-" command line with the following syntax:
-" vim --noplugin -u vim/vundles.vim -N "+set hidden" "+syntax on" +BundleClean! +BundleInstall +qall
-" Filetype off is required by vundle
+" the command :PluginInstall from within vim.
+
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " let Vundle manage Vundle (required)
-Bundle "gmarik/vundle"
+Plugin 'gmarik/Vundle.vim'
 
 " All your bundles here
 
 " Languages
-Bundle 'derekwyatt/vim-scala'
-Bundle 'dag/vim-fish'
-Bundle 'elixir-lang/vim-elixir'
+Plugin 'derekwyatt/vim-scala'
+Plugin 'dag/vim-fish'
+Plugin 'elixir-lang/vim-elixir'
 
 " General text editing improvements...
-Bundle 'vim-scripts/IndexedSearch'
-Bundle 'vim-scripts/matchit.zip.git'
-Bundle 'terryma/vim-multiple-cursors'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-commentary'
+Plugin 'vim-scripts/IndexedSearch'
+Plugin 'vim-scripts/matchit.zip.git'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'Lokaltog/vim-easymotion'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-commentary'
 
 " General vim improvements
-Bundle 'kien/ctrlp.vim'
-Bundle 'rking/ag.vim'
-Bundle 'scrooloose/nerdtree.git'
-Bundle 'Yggdroot/indentLine'
-Bundle 'troydm/easybuffer.vim'
-Bundle 'vim-scripts/scratch.vim'
-Bundle 'tpope/vim-fugitive'
-Bundle 'Keithbsmiley/investigate.vim'
-Bundle 'christoomey/vim-tmux-navigator'
-Bundle 'airblade/vim-gitgutter'
+Plugin 'kien/ctrlp.vim'
+Plugin 'rking/ag.vim'
+Plugin 'scrooloose/nerdtree.git'
+Plugin 'Yggdroot/indentLine'
+Plugin 'troydm/easybuffer.vim'
+Plugin 'vim-scripts/scratch.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'Keithbsmiley/investigate.vim'
+Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'airblade/vim-gitgutter'
 
 " Text objects
-Bundle 'kana/vim-textobj-user'
-Bundle 'bootleq/vim-textobj-rubysymbol'
-Bundle 'coderifous/textobj-word-column.vim'
-Bundle 'nelstrom/vim-textobj-rubyblock'
-Bundle 'terryma/vim-expand-region'
+Plugin 'kana/vim-textobj-user'
+Plugin 'bootleq/vim-textobj-rubysymbol'
+Plugin 'coderifous/textobj-word-column.vim'
+Plugin 'nelstrom/vim-textobj-rubyblock'
+Plugin 'terryma/vim-expand-region'
 
 " Cosmetics, color scheme, Powerline...
-Bundle 'chrisbra/color_highlight.git'
-" Bundle 'skwp/vim-colors-solarized'
-" Bundle 'junegunn/seoul256.vim'
-Bundle 'itchyny/lightline.vim'
-Bundle 'chriskempson/base16-vim'
-" Bundle 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
+Plugin 'chrisbra/color_highlight.git'
+" Plugin 'skwp/vim-colors-solarized'
+" Plugin 'junegunn/seoul256.vim'
+Plugin 'itchyny/lightline.vim'
+Plugin 'chriskempson/base16-vim'
+" Plugin 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
+
+call vundle#end()
+filetype plugin indent on
