@@ -28,6 +28,7 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-commentary'
+Plugin 'jiangmiao/auto-pairs'
 
 " General vim improvements
 Plugin 'kien/ctrlp.vim'
