@@ -38,7 +38,7 @@ Plugin 'Yggdroot/indentLine'
 Plugin 'troydm/easybuffer.vim'
 Plugin 'vim-scripts/scratch.vim'
 Plugin 'tpope/vim-fugitive'
-Plugin 'Keithbsmiley/investigate.vim'
+Plugin 'rizzatti/dash.vim'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'airblade/vim-gitgutter'
 
