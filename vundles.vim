@@ -41,6 +41,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'rizzatti/dash.vim'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'tmux-plugins/vim-tmux-focus-events'
 
 " Text objects
 Plugin 'kana/vim-textobj-user'
