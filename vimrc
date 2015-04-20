@@ -8,7 +8,7 @@ filetype plugin on
 filetype indent on
 
 " Map the leader key. Must happen before Vundle so all the settings can be set accordingly.
-let mapleader = " "
+  let mapleader = " "
 
 " =============== Vundle Initialization ===============
 " This loads all the plugins specified in ~/.dotfiles/vim/vundle.vim
@@ -38,6 +38,9 @@ set guioptions-=r                   " Remove scrollbar for GUI Vim.
 " Highlight the current line
 set cursorline
 hi CursorLine cterm=none ctermbg=black
+
+" Key timeouts
+set timeoutlen=1000 ttimeoutlen=0
 
 " The current buffer can be put to the background without writing to disk;
 " When a background buffer becomes current again, marks and undo-history are remembered.
