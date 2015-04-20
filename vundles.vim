@@ -17,8 +17,6 @@ Plugin 'gmarik/Vundle.vim'
 " All your bundles here
 
 " Languages
-Plugin 'derekwyatt/vim-scala'
-Plugin 'dag/vim-fish'
 Plugin 'elixir-lang/vim-elixir'
 
 " General text editing improvements...
@@ -36,7 +34,6 @@ Plugin 'rking/ag.vim'
 Plugin 'scrooloose/nerdtree.git'
 Plugin 'Yggdroot/indentLine'
 Plugin 'troydm/easybuffer.vim'
-Plugin 'vim-scripts/scratch.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'rizzatti/dash.vim'
 Plugin 'christoomey/vim-tmux-navigator'
@@ -51,12 +48,8 @@ Plugin 'nelstrom/vim-textobj-rubyblock'
 Plugin 'terryma/vim-expand-region'
 
 " Cosmetics, color scheme, Powerline...
-Plugin 'chrisbra/color_highlight.git'
-" Plugin 'skwp/vim-colors-solarized'
-" Plugin 'junegunn/seoul256.vim'
 Plugin 'itchyny/lightline.vim'
 Plugin 'chriskempson/base16-vim'
-" Plugin 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
 
 call vundle#end()
 filetype plugin indent on
