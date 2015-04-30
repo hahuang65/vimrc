@@ -34,6 +34,7 @@ set laststatus=2                    " Always show the statusline
 set number                          " Show line numbers
 " set relativenumber                " Show relative line numbers, causes slowness.
 set guioptions-=r                   " Remove scrollbar for GUI Vim.
+map q: :q                           " Stop showing the popup when I'm trying to quit
 
 " Highlight the current line
 set cursorline
