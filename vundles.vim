@@ -18,7 +18,7 @@ Plugin 'gmarik/Vundle.vim'
 
 " Languages
 Plugin 'elixir-lang/vim-elixir'
-Plugin 'mattonrails/vim-mix'
+Plugin 'spiegela/vimix'
 
 " General text editing improvements...
 Plugin 'vim-scripts/IndexedSearch'
@@ -31,7 +31,7 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'junegunn/vim-easy-align'
 
 " General vim improvements
-Plugin 'tpope/vim-dispatch'
+Plugin 'benmills/vimux'
 Plugin 'kien/ctrlp.vim'
 Plugin 'rking/ag.vim'
 Plugin 'scrooloose/nerdtree.git'
@@ -44,7 +44,6 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'tmux-plugins/vim-tmux-focus-events'
 Plugin 'junegunn/vim-pseudocl' " Required by junegunn/vim-oblique
 Plugin 'junegunn/vim-oblique'
-Plugin 'janko-m/vim-test'
 Plugin 'junegunn/goyo.vim'
 Plugin 'junegunn/limelight.vim'
 

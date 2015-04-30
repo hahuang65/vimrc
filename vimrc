@@ -172,12 +172,7 @@ vmap <silent> <expr> p <sid>Repl()
 " Select text that was just pasted
 noremap gV `[v`]
 
-" ================ Saving ================================
-
-nnoremap <leader>w :w<CR>
-
 " ================ Custom Settings ========================
-
 for fpath in split(globpath('~/.dotfiles/vim/settings', '*.vim'), '\n')
   exe 'source' fpath
 endfor
