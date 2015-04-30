@@ -18,6 +18,7 @@ Plugin 'gmarik/Vundle.vim'
 
 " Languages
 Plugin 'elixir-lang/vim-elixir'
+Plugin 'mattonrails/vim-mix'
 
 " General text editing improvements...
 Plugin 'vim-scripts/IndexedSearch'
@@ -27,8 +28,10 @@ Plugin 'Lokaltog/vim-easymotion'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-commentary'
 Plugin 'jiangmiao/auto-pairs'
+Plugin 'junegunn/vim-easy-align'
 
 " General vim improvements
+Plugin 'tpope/vim-dispatch'
 Plugin 'kien/ctrlp.vim'
 Plugin 'rking/ag.vim'
 Plugin 'scrooloose/nerdtree.git'
@@ -41,6 +44,9 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'tmux-plugins/vim-tmux-focus-events'
 Plugin 'junegunn/vim-pseudocl' " Required by junegunn/vim-oblique
 Plugin 'junegunn/vim-oblique'
+Plugin 'janko-m/vim-test'
+Plugin 'junegunn/goyo.vim'
+Plugin 'junegunn/limelight.vim'
 
 " Text objects
 Plugin 'kana/vim-textobj-user'
@@ -48,6 +54,7 @@ Plugin 'bootleq/vim-textobj-rubysymbol'
 Plugin 'coderifous/textobj-word-column.vim'
 Plugin 'nelstrom/vim-textobj-rubyblock'
 Plugin 'terryma/vim-expand-region'
+Plugin 'junegunn/vim-after-object'
 
 " Cosmetics, color scheme, Powerline...
 Plugin 'itchyny/lightline.vim'

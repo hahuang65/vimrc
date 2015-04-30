@@ -1,7 +1,7 @@
 " Searching options
 
-" bind <leader>g to grep word under cursor
-nnoremap <leader>g :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
+" bind <leader>* to grep word under cursor
+nnoremap <leader>* :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 
 " Change how CtrlP works based on if Ag is available
 if executable('ag')
