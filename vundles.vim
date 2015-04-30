@@ -39,6 +39,8 @@ Plugin 'rizzatti/dash.vim'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tmux-plugins/vim-tmux-focus-events'
+Plugin 'junegunn/vim-pseudocl' " Required by junegunn/vim-oblique
+Plugin 'junegunn/vim-oblique'
 
 " Text objects
 Plugin 'kana/vim-textobj-user'
