@@ -1,3 +1,3 @@
 " Base 16 Eighties
-colorscheme base16-bespin
+colorscheme gotham
 set background=dark

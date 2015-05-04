@@ -58,6 +58,7 @@ Plugin 'junegunn/vim-after-object'
 " Cosmetics, color scheme, Powerline...
 Plugin 'itchyny/lightline.vim'
 Plugin 'chriskempson/base16-vim'
+Plugin 'whatyouhide/vim-gotham'
 
 call vundle#end()
 filetype plugin indent on
