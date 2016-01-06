@@ -8,7 +8,7 @@ filetype plugin on
 filetype indent on
 
 " Map the leader key. Must happen before Vundle so all the settings can be set accordingly.
-  let mapleader = " "
+let mapleader = " "
 
 " =============== Vundle Initialization ===============
 " This loads all the plugins specified in ~/.dotfiles/vim/vundle.vim

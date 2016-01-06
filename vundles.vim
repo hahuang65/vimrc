@@ -18,7 +18,6 @@ Plugin 'gmarik/Vundle.vim'
 
 " Languages
 Plugin 'elixir-lang/vim-elixir'
-Plugin 'spiegela/vimix'
 
 " General text editing improvements...
 Plugin 'vim-scripts/IndexedSearch'
@@ -31,7 +30,6 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'junegunn/vim-easy-align'
 
 " General vim improvements
-Plugin 'benmills/vimux'
 Plugin 'kien/ctrlp.vim'
 Plugin 'rking/ag.vim'
 Plugin 'scrooloose/nerdtree.git'
@@ -49,10 +47,6 @@ Plugin 'junegunn/limelight.vim'
 
 " Text objects
 Plugin 'kana/vim-textobj-user'
-Plugin 'bootleq/vim-textobj-rubysymbol'
-Plugin 'coderifous/textobj-word-column.vim'
-Plugin 'nelstrom/vim-textobj-rubyblock'
-Plugin 'terryma/vim-expand-region'
 Plugin 'junegunn/vim-after-object'
 
 " Cosmetics, color scheme, Powerline...
