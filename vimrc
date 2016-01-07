@@ -114,6 +114,9 @@ set ignorecase
 set smartcase
 set incsearch       " Incremental search as you type
 set hlsearch        " Highlight search results
+" Always have n search forward and N search backwards
+nnoremap <expr> n  'Nn'[v:searchforward]
+nnoremap <expr> N  'nN'[v:searchforward]
 
 " ================ Scrolling ========================
 
@@ -173,6 +176,10 @@ vmap <silent> <expr> p <sid>Repl()
 
 " Select text that was just pasted
 noremap gV `[v`]
+
+" Keep selection highlighted while shifting text
+xnoremap <  <gv
+xnoremap >  >gv
 
 " ================ Custom Settings ========================
 for fpath in split(globpath('~/.dotfiles/vim/settings', '*.vim'), '\n')
