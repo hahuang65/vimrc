@@ -29,6 +29,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-commentary'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'junegunn/vim-easy-align'
+Plugin 'ConradIrwin/vim-bracketed-paste'
 
 " General vim improvements
 Plugin 'kien/ctrlp.vim'
