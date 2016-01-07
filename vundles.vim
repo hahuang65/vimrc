@@ -18,6 +18,7 @@ Plugin 'gmarik/Vundle.vim'
 
 " Languages
 Plugin 'elixir-lang/vim-elixir'
+Plugin 'vim-ruby/vim-ruby'
 
 " General text editing improvements...
 Plugin 'vim-scripts/IndexedSearch'

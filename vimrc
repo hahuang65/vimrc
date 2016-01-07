@@ -37,8 +37,8 @@ set guioptions-=r                   " Remove scrollbar for GUI Vim.
 map q: :q                           " Stop showing the popup when I'm trying to quit
 
 " Highlight the current line
-set cursorline
-hi CursorLine cterm=none ctermbg=black
+" set cursorline
+" hi CursorLine cterm=none ctermbg=black
 
 " Key timeouts
 set timeoutlen=1000 ttimeoutlen=0
