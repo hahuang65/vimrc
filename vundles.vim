@@ -6,55 +6,52 @@
 " Once you've updated the list of plugin, you can run vundle update by issuing
 " the command :PluginInstall from within vim.
 
-filetype off
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall | source $MYVIMRC
+endif
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-" let Vundle manage Vundle (required)
-Plugin 'gmarik/Vundle.vim'
-
-" All your bundles here
+call plug#begin('~/.vim/plugged')
 
 " Languages
-Plugin 'elixir-lang/vim-elixir'
-Plugin 'vim-ruby/vim-ruby'
+Plug 'elixir-lang/vim-elixir'
+Plug 'vim-ruby/vim-ruby'
 
 " General text editing improvements...
-Plugin 'vim-scripts/IndexedSearch'
-Plugin 'vim-scripts/matchit.zip.git'
-Plugin 'terryma/vim-multiple-cursors'
-Plugin 'Lokaltog/vim-easymotion'
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-commentary'
-Plugin 'jiangmiao/auto-pairs'
-Plugin 'junegunn/vim-easy-align'
-Plugin 'ConradIrwin/vim-bracketed-paste'
+Plug 'vim-scripts/IndexedSearch'
+Plug 'vim-scripts/matchit.zip'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'Lokaltog/vim-easymotion'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-commentary'
+Plug 'jiangmiao/auto-pairs'
+Plug 'junegunn/vim-easy-align'
+Plug 'ConradIrwin/vim-bracketed-paste'
 
 " General vim improvements
-Plugin 'kien/ctrlp.vim'
-Plugin 'rking/ag.vim'
-Plugin 'scrooloose/nerdtree.git'
-Plugin 'Yggdroot/indentLine'
-Plugin 'troydm/easybuffer.vim'
-Plugin 'tpope/vim-fugitive'
-Plugin 'rizzatti/dash.vim'
-Plugin 'christoomey/vim-tmux-navigator'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'tmux-plugins/vim-tmux-focus-events'
-Plugin 'junegunn/vim-pseudocl' " Required by junegunn/vim-oblique
-Plugin 'junegunn/vim-oblique'
-Plugin 'junegunn/goyo.vim'
-Plugin 'junegunn/limelight.vim'
+Plug 'kien/ctrlp.vim'
+Plug 'rking/ag.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'Yggdroot/indentLine'
+Plug 'troydm/easybuffer.vim'
+Plug 'tpope/vim-fugitive'
+Plug 'rizzatti/dash.vim'
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'airblade/vim-gitgutter'
+Plug 'tmux-plugins/vim-tmux-focus-events'
+Plug 'junegunn/vim-pseudocl' " Required by junegunn/vim-oblique
+Plug 'junegunn/vim-oblique'
+Plug 'junegunn/goyo.vim'
+Plug 'junegunn/limelight.vim'
 
 " Text objects
-Plugin 'kana/vim-textobj-user'
-Plugin 'junegunn/vim-after-object'
+Plug 'kana/vim-textobj-user'
+Plug 'junegunn/vim-after-object'
 
 " Cosmetics, color scheme, Powerline...
-Plugin 'itchyny/lightline.vim'
-Plugin 'chriskempson/base16-vim'
-Plugin 'whatyouhide/vim-gotham'
+Plug 'itchyny/lightline.vim'
+Plug 'chriskempson/base16-vim'
+Plug 'whatyouhide/vim-gotham'
 
-call vundle#end()
-filetype plugin indent on
+call plug#end()
