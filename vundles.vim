@@ -17,6 +17,7 @@ call plug#begin('~/.vim/plugged')
 " Languages
 Plug 'elixir-lang/vim-elixir'
 Plug 'vim-ruby/vim-ruby'
+Plug 'janko-m/vim-test'
 
 " General text editing improvements...
 Plug 'vim-scripts/IndexedSearch'
