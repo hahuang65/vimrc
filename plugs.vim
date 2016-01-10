@@ -18,6 +18,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'elixir-lang/vim-elixir'
 Plug 'awetzel/elixir.nvim', { 'do': './install.sh' }
 Plug 'vim-ruby/vim-ruby'
+Plug 'osyo-manga/vim-monster'
 Plug 'janko-m/vim-test'
 
 " General text editing improvements...
