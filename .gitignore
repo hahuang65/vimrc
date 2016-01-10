@@ -3,3 +3,4 @@ bundle
 autoload
 plugged
 init.vim
+.init.vim-rplugin~
