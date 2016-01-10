@@ -2,19 +2,14 @@
 " Use Vim settings rather than Vi settings. Must be first, it affects other options
 set nocompatible
 
-" Filetype settings are required by vundle
-filetype off
-filetype plugin on
-filetype indent on
-
-" Map the leader key. Must happen before Vundle so all the settings can be set accordingly.
+" Map the leader key. Must happen before Plug so all the settings can be set accordingly.
 let mapleader = " "
 
-" =============== Vundle Initialization ===============
-" This loads all the plugins specified in ~/.dotfiles/vim/vundle.vim
-" Use Vundle plugin to manage all other plugins
-if filereadable(expand("~/.dotfiles/vim/vundles.vim"))
-  source ~/.dotfiles/vim/vundles.vim
+" =============== Plug Initialization ===============
+" This loads all the plugins specified in ~/.dotfiles/vim/plugs.vim
+" Use Plug to manage all other plugins
+if filereadable(expand("~/.dotfiles/vim/plugs.vim"))
+  source ~/.dotfiles/vim/plugs.vim
 endif
 
 " ================ General ==========================
@@ -32,13 +27,8 @@ set encoding=utf-8                  " Force UTF-8 as standard encoding
 set ffs=unix,dos,mac                " Unix as the standard file type
 set laststatus=2                    " Always show the statusline
 set number                          " Show line numbers
-" set relativenumber                " Show relative line numbers, causes slowness.
 set guioptions-=r                   " Remove scrollbar for GUI Vim.
 map q: :q                           " Stop showing the popup when I'm trying to quit
-
-" Highlight the current line
-" set cursorline
-" hi CursorLine cterm=none ctermbg=black
 
 " Key timeouts
 set timeoutlen=1000 ttimeoutlen=0

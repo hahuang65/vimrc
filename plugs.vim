@@ -16,6 +16,7 @@ call plug#begin('~/.vim/plugged')
 
 " Languages
 Plug 'elixir-lang/vim-elixir'
+Plug 'archSeer/elixir.nvim'
 Plug 'vim-ruby/vim-ruby'
 Plug 'janko-m/vim-test'
 
@@ -29,10 +30,11 @@ Plug 'tpope/vim-commentary'
 Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/vim-easy-align'
 Plug 'ConradIrwin/vim-bracketed-paste'
+Plug 'Shougo/deoplete.nvim'
 
 " General vim improvements
 Plug 'kien/ctrlp.vim'
-Plug 'rking/ag.vim'
+Plug 'mhinz/vim-grepper'
 Plug 'scrooloose/nerdtree'
 Plug 'Yggdroot/indentLine'
 Plug 'troydm/easybuffer.vim'
