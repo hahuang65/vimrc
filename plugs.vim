@@ -16,7 +16,7 @@ call plug#begin('~/.vim/plugged')
 
 " Languages
 Plug 'elixir-lang/vim-elixir'
-Plug 'awetzel/elixir.nvim', { 'do': './install.sh' }
+Plug 'archSeer/elixir.nvim'
 Plug 'vim-ruby/vim-ruby'
 Plug 'osyo-manga/vim-monster'
 Plug 'janko-m/vim-test'
