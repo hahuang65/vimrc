@@ -1,6 +1,6 @@
 " Searching options
 
-nnoremap <leader>/ :Grepper! -tool ag -open -switch<CR>
+nnoremap <leader>/ :Grepper -tool ag -open -switch<CR>
 
 " Make a simple search text object.
 vnoremap <silent> q //e<C-r>=&selection=='exclusive'?'+1':''<CR><CR>
