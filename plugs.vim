@@ -16,9 +16,8 @@ call plug#begin('~/.vim/plugged')
 
 " Languages
 Plug 'elixir-lang/vim-elixir'
-Plug 'archSeer/elixir.nvim'
 Plug 'vim-ruby/vim-ruby'
-Plug 'osyo-manga/vim-monster'
+Plug 'dag/vim-fish'
 Plug 'janko-m/vim-test'
 
 " General text editing improvements...
