@@ -2,7 +2,7 @@
 set titlestring="Firefox"
 
 " Set default search to Google
-set defsearch=google
+set defsearch=duckduckgo
 
 " Open everything in tabs
 set newtab=all
