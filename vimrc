@@ -29,6 +29,7 @@ set laststatus=2                    " Always show the statusline
 set number                          " Show line numbers
 set guioptions-=r                   " Remove scrollbar for GUI Vim.
 map q: :q                           " Stop showing the popup when I'm trying to quit
+map :Q :q                           " Stop showing the popup when I'm trying to quit
 
 " Key timeouts
 set timeoutlen=1000 ttimeoutlen=0
@@ -104,9 +105,6 @@ set ignorecase
 set smartcase
 set incsearch       " Incremental search as you type
 set hlsearch        " Highlight search results
-" Always have n search forward and N search backwards
-nnoremap <expr> n  'Nn'[v:searchforward]
-nnoremap <expr> N  'nN'[v:searchforward]
 
 " ================ Scrolling ========================
 
