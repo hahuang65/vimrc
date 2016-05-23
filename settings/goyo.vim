@@ -1,4 +1,4 @@
-nnoremap <leader>g :Goyo<CR>
+nnoremap <leader>G :Goyo<CR>
 
 function! s:goyo_enter()
   set wrap

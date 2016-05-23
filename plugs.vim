@@ -22,29 +22,24 @@ call plug#begin('~/.vim/plugged')
 " Languages
 Plug 'elixir-lang/vim-elixir'
 Plug 'vim-ruby/vim-ruby'
-Plug 'dag/vim-fish'
 Plug 'janko-m/vim-test'
 
 " General text editing improvements...
-Plug 'vim-scripts/IndexedSearch'
 Plug 'vim-scripts/matchit.zip'
 Plug 'terryma/vim-multiple-cursors'
-Plug 'Lokaltog/vim-easymotion'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'jiangmiao/auto-pairs'
-Plug 'junegunn/vim-easy-align'
 Plug 'ConradIrwin/vim-bracketed-paste'
 Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
 
 " General vim improvements
-Plug 'kien/ctrlp.vim'
-Plug 'mhinz/vim-grepper'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
+Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'Yggdroot/indentLine'
 Plug 'troydm/easybuffer.vim'
 Plug 'tpope/vim-fugitive'
-Plug 'rizzatti/dash.vim'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'airblade/vim-gitgutter'
 Plug 'tmux-plugins/vim-tmux-focus-events'
