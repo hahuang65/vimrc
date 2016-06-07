@@ -23,6 +23,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'elixir-lang/vim-elixir'
 Plug 'vim-ruby/vim-ruby'
 Plug 'janko-m/vim-test'
+Plug 'rizzatti/dash.vim'
 
 " General text editing improvements...
 Plug 'vim-scripts/matchit.zip'
