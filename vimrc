@@ -28,8 +28,9 @@ set ffs=unix,dos,mac                " Unix as the standard file type
 set laststatus=2                    " Always show the statusline
 set number                          " Show line numbers
 set guioptions-=r                   " Remove scrollbar for GUI Vim.
-map q: :q                           " Stop showing the popup when I'm trying to quit
-map :Q :q                           " Stop showing the popup when I'm trying to quit
+map q: :q
+map :Q :q
+map :W :w
 
 " Key timeouts
 set timeoutlen=1000 ttimeoutlen=0
