@@ -48,6 +48,7 @@ Plug 'junegunn/vim-pseudocl' " Required by junegunn/vim-oblique
 Plug 'junegunn/vim-oblique'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
+Plug 'timakro/vim-searchant'
 
 " Text objects
 Plug 'kana/vim-textobj-user'
