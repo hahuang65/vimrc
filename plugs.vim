@@ -31,7 +31,7 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'jiangmiao/auto-pairs'
-Plug 'ConradIrwin/vim-bracketed-paste'
+Plug 'wincent/terminus'
 Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
 
 " General vim improvements
