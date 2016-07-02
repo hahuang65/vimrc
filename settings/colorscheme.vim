@@ -1,3 +1,3 @@
 " Base 16 Eighties
-colorscheme gotham
+colorscheme solarized
 set background=dark

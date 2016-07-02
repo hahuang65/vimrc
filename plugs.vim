@@ -55,6 +55,7 @@ Plug 'junegunn/vim-after-object'
 
 " Cosmetics, color scheme, Powerline...
 Plug 'itchyny/lightline.vim'
-Plug 'whatyouhide/vim-gotham'
+" Plug 'whatyouhide/vim-gotham'
+Plug 'altercation/vim-colors-solarized'
 
 call plug#end()
