@@ -1,2 +1,2 @@
 " EasyBuffer
-noremap <leader>b :EasyBuffer<CR>
+noremap <leader>b :EasyBufferHorizontalBelow<CR>
