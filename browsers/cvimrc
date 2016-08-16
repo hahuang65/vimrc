@@ -2,6 +2,7 @@ set ignorecase
 set incsearch
 set smartcase
 set dimhintcharacters
+set noautofocus
 
 let defaultengine="duckduckgo"
 let barposition="bottom"
