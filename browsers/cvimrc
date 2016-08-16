@@ -1,0 +1,7 @@
+set ignorecase
+set incsearch
+set smartcase
+set dimhintcharacters
+
+let defaultengine="duckduckgo"
+let barposition="bottom"
