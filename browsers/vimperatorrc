@@ -20,8 +20,9 @@ set visualbell
 set toolbars=noaddons,nobookmarks,nomenu,nonavigation
 
 " Make hint links more noticeable and use letters
-:highlight Hint font-size:110%;color:white;background-color:blue;padding:2px;
-:set hintchars=asdfghjkl
+highlight Hint font-size:110%;color:white;background-color:blue;padding:3px;border:1px solid black;border-radius:5px;
+highlight HintElem background-color:none;
+set hintchars=asdfghjkl
 
 " Navigation bindings
 noremap j 5j
