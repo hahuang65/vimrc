@@ -25,7 +25,6 @@ Plug 'vim-ruby/vim-ruby'
 Plug 'janko-m/vim-test'
 Plug 'rizzatti/dash.vim'
 Plug 'mmorearty/elixir-ctags'
-Plug 'fishman/ctags'
 
 " General text editing improvements...
 Plug 'vim-scripts/matchit.zip'
