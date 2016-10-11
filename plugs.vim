@@ -24,6 +24,8 @@ Plug 'elixir-lang/vim-elixir'
 Plug 'vim-ruby/vim-ruby'
 Plug 'janko-m/vim-test'
 Plug 'rizzatti/dash.vim'
+Plug 'mmorearty/elixir-ctags'
+Plug 'fishman/ctags'
 
 " General text editing improvements...
 Plug 'vim-scripts/matchit.zip'
@@ -33,6 +35,7 @@ Plug 'tpope/vim-commentary'
 Plug 'jiangmiao/auto-pairs'
 Plug 'wincent/terminus'
 Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
+Plug 'majutsushi/tagbar'
 
 " General vim improvements
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
