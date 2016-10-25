@@ -46,8 +46,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'airblade/vim-gitgutter'
 Plug 'tmux-plugins/vim-tmux-focus-events'
-Plug 'junegunn/vim-pseudocl' " Required by junegunn/vim-oblique
-Plug 'junegunn/vim-oblique'
+Plug 'junegunn/vim-slash'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
 
