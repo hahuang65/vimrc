@@ -12,11 +12,6 @@ if empty(glob('~/.vim/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall | source $MYVIMRC
 endif
 
-
-function! DoRemote(arg)
-  UpdateRemotePlugins
-endfunction
-
 call plug#begin('~/.vim/plugged')
 
 " Languages
@@ -25,6 +20,8 @@ Plug 'vim-ruby/vim-ruby'
 Plug 'janko-m/vim-test'
 Plug 'rizzatti/dash.vim'
 Plug 'mmorearty/elixir-ctags'
+Plug 'fishbullet/deoplete-ruby'
+Plug 'awetzel/elixir.nvim', { 'do': 'yes \| ./install.sh' }
 
 " General text editing improvements...
 Plug 'vim-scripts/matchit.zip'
@@ -33,7 +30,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'jiangmiao/auto-pairs'
 Plug 'wincent/terminus'
-Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'majutsushi/tagbar'
 
 " General vim improvements
