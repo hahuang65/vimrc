@@ -15,15 +15,15 @@ endif
 call plug#begin('~/.vim/plugged')
 
 " Languages
-Plug 'elixir-lang/vim-elixir'
-Plug 'vim-ruby/vim-ruby'
-Plug 'janko-m/vim-test'
-Plug 'rizzatti/dash.vim'
+Plug 'sheerun/vim-polyglot'
+Plug 'ludovicchabant/vim-gutentags'
 Plug 'mmorearty/elixir-ctags'
+Plug 'slashmili/alchemist.vim'
 Plug 'fishbullet/deoplete-ruby'
-Plug 'awetzel/elixir.nvim', { 'do': 'yes \| ./install.sh' }
 
 " General text editing improvements...
+Plug 'janko-m/vim-test'
+Plug 'keith/investigate.vim'
 Plug 'vim-scripts/matchit.zip'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-surround'
@@ -32,6 +32,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'wincent/terminus'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'majutsushi/tagbar'
+Plug 'junegunn/vim-easy-align'
 
 " General vim improvements
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
@@ -46,6 +47,8 @@ Plug 'tmux-plugins/vim-tmux-focus-events'
 Plug 'junegunn/vim-slash'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
+Plug 'neomake/neomake'
+Plug 'powerman/vim-plugin-AnsiEsc' " This colors the ExDocs for Alchemist
 
 " Text objects
 Plug 'kana/vim-textobj-user'
