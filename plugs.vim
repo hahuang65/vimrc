@@ -16,7 +16,6 @@ call plug#begin('~/.vim/plugged')
 
 " Languages
 Plug 'sheerun/vim-polyglot'
-Plug 'ludovicchabant/vim-gutentags'
 Plug 'mmorearty/elixir-ctags'
 Plug 'slashmili/alchemist.vim'
 Plug 'fishbullet/deoplete-ruby'
@@ -49,6 +48,7 @@ Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
 Plug 'neomake/neomake'
 Plug 'powerman/vim-plugin-AnsiEsc' " This colors the ExDocs for Alchemist
+Plug 'ludovicchabant/vim-gutentags'
 
 " Text objects
 Plug 'kana/vim-textobj-user'
