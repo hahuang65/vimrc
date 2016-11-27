@@ -21,7 +21,6 @@ set ruler                           " Always show the current position
 set backspace=indent,eol,start      " Allow backspace to delete everything
 set autoread                        " Auto reload file when it's changed in the background
 set showmatch                       " Show matching brackets and parentheses
-set gcr=a:blinkon0                  " Don't blink cursor
 syntax enable                       " Syntax highlighting
 set encoding=utf-8                  " Force UTF-8 as standard encoding
 set ffs=unix,dos,mac                " Unix as the standard file type
@@ -33,7 +32,7 @@ map :Q :q
 map :W :w
 
 " Key timeouts
-set timeoutlen=1000 ttimeoutlen=0
+set timeoutlen=250 ttimeoutlen=0
 
 " The current buffer can be put to the background without writing to disk;
 " When a background buffer becomes current again, marks and undo-history are remembered.
