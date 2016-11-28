@@ -25,7 +25,7 @@ Plug 'tpope/vim-commentary'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
 " General vim improvements
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
+set rtp+=/usr/local/opt/fzf " Use system-installed fzf
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-vinegar'
 Plug 'tpope/vim-fugitive'
