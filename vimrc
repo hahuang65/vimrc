@@ -138,13 +138,23 @@ nnoremap <CR> G
 
 " ================ Copy and Paste ========================
 
-" Yank text to the OS X clipboard
-noremap <leader>y "*y
-noremap <leader>Y "*Y
-" set clipboard=unnamed
+let os = substitute(system('uname'), "\n", "", "")
 
-" Preserve indentation while pasting text from the OS X clipboard
-noremap <leader>p :set paste<CR>:put *<CR>:set nopaste<CR>
+if os == "Linux"
+  " Yank text to the OS clipboard
+  noremap <leader>y "+y
+  noremap <leader>Y "+Y
+
+  " Preserve indentation while pasting text from the OS clipboard
+  noremap <leader>p :set paste<CR>:put +<CR>:set nopaste<CR>
+elseif os == "Darwin"
+  " Yank text to the OS clipboard
+  noremap <leader>y "*y
+  noremap <leader>Y "*Y
+
+  " Preserve indentation while pasting text from the OS clipboard
+  noremap <leader>p :set paste<CR>:put *<CR>:set nopaste<CR>
+endif
 
 " Jump to end of pasted text
 vnoremap <silent> y y`]
