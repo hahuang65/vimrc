@@ -16,16 +16,14 @@ Plug 'vimwiki/vimwiki'
 Plug 'sheerun/vim-polyglot'
 Plug 'mmorearty/elixir-ctags'
 Plug 'slashmili/alchemist.vim'
-Plug 'fishbullet/deoplete-ruby'
 
 " General text editing improvements...
 Plug 'keith/investigate.vim'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
 " General vim improvements
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all --no-update-rc' }
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-vinegar'
 Plug 'tpope/vim-fugitive'
