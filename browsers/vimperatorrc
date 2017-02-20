@@ -28,9 +28,5 @@ set hintchars=asdfghjkl
 noremap j 5j
 noremap k 5k
 noremap x d
-noremap d <C-d>
-noremap u <C-u>
-noremap K <C-p>
-noremap J <C-n>
 noremap + :open javascript:q=location.href;if(document.getSelection){d=document.getSelection();}else{d='';};p=document.title;void(open('https://pinboard.in/add?url='+encodeURIComponent(q)+'&description='+encodeURIComponent(d)+'&title='+encodeURIComponent(p),'Pinboard','toolbar=no,width=700,height=350'));<Cr>
 noremap = :open javascript:q=location.href;p=document.title;void(t=open('https://pinboard.in/add?later=yes&noui=yes&jump=close&url='+encodeURIComponent(q)+'&title='+encodeURIComponent(p),'Pinboard','toolbar=no,width=100,height=100'));t.blur();<Cr>
