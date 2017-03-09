@@ -23,8 +23,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 
 " General vim improvements
-Plug 'junegunn/fzf', { 'dir': '~/.fzf' }
-set rtp+=~/.fzf " Change this back to installing via the plug when Go bug is fixed
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --no-update-rc' }
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-vinegar'
 Plug 'tpope/vim-fugitive'
