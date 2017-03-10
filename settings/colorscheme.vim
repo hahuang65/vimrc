@@ -1,3 +1,2 @@
-" Base 16 Eighties
-colorscheme gotham
+colorscheme nord
 set background=dark

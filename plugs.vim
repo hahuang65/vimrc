@@ -40,5 +40,6 @@ Plug 'powerman/vim-plugin-AnsiEsc' " This colors the ExDocs for Alchemist
 Plug 'itchyny/lightline.vim'
 Plug 'whatyouhide/vim-gotham'
 Plug 'altercation/vim-colors-solarized'
+Plug 'arcticicestudio/nord-vim'
 
 call plug#end()
