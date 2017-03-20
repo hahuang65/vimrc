@@ -1,13 +1,10 @@
-" Ripgrep: https://medium.com/@crashybang/supercharge-vim-with-fzf-and-ripgrep-d4661fc853d2#.bv4z93rfz
-command! -bang -nargs=* Rg call fzf#vim#grep('rg --column --line-number --no-heading --fixed-strings --ignore-case --no-ignore --hidden --follow --glob "!.git/*" --color "always" '.shellescape(<q-args>), 1, <bang>0)
-
 map <leader>t :GitFiles<CR>
 map <leader>T :Files<CR>
 map <leader>c :Commits<CR>
 map <leader>] :BTags<CR>
 map <leader>} :Tags<CR>
 map <leader>b :Buffers<CR>
-map <leader>/ :Rg<Cr>
+map <leader>/ :Ag<Cr>
 
 let g:fzf_buffers_jump = 1
 
