@@ -14,6 +14,7 @@ Plug 'vimwiki/vimwiki'
 
 " Languages
 Plug 'sheerun/vim-polyglot'
+Plug 'tpope/vim-rails'
 Plug 'mmorearty/elixir-ctags'
 Plug 'slashmili/alchemist.vim'
 
