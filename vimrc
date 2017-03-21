@@ -27,8 +27,6 @@ set ffs=unix,dos,mac                " Unix as the standard file type
 set laststatus=2                    " Always show the statusline
 set number                          " Show line numbers
 set guioptions-=r                   " Remove scrollbar for GUI Vim.
-set relativenumber                  " Relative line numbers
-set number                          " Absoulte line number for current line
 map q: :q
 map :Q :q
 map :W :w
