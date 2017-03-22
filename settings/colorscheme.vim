@@ -1,2 +1,2 @@
-colorscheme nord
+colorscheme gotham
 set background=dark
