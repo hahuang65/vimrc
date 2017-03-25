@@ -22,6 +22,7 @@ Plug 'slashmili/alchemist.vim'
 Plug 'keith/investigate.vim'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
+Plug 'lilydjwg/colorizer'
 
 " General vim improvements
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --no-update-rc' }
