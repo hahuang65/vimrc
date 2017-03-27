@@ -12,13 +12,13 @@
 " nord13 (#EBCB8B) = "3"
 " nord14 (#A3BE8C) = "2"
 " nord15 (#B48EAD) = "5"
-augroup nord-overrides
-  autocmd!
-  autocmd ColorScheme nord highlight rubySymbol ctermfg=5
-  autocmd ColorScheme nord highlight elixirAtom ctermfg=5
-  autocmd ColorScheme nord highlight rubyPseudoVariable ctermfg=1
-  autocmd ColorScheme nord highlight elixirPseudoVariable ctermfg=1
-augroup END
+" augroup nord-overrides
+"   autocmd!
+"   autocmd ColorScheme nord highlight rubySymbol ctermfg=5
+"   autocmd ColorScheme nord highlight elixirAtom ctermfg=5
+"   autocmd ColorScheme nord highlight rubyPseudoVariable ctermfg=1
+"   autocmd ColorScheme nord highlight elixirPseudoVariable ctermfg=1
+" augroup END
 
-colorscheme nord
+colorscheme gotham
 set background=dark
