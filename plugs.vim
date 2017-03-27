@@ -43,5 +43,6 @@ Plug 'itchyny/lightline.vim'
 Plug 'whatyouhide/vim-gotham'
 Plug 'altercation/vim-colors-solarized'
 Plug 'arcticicestudio/nord-vim'
+Plug 'chriskempson/base16-vim'
 
 call plug#end()
