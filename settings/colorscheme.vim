@@ -20,5 +20,5 @@
 "   autocmd ColorScheme nord highlight elixirPseudoVariable ctermfg=1
 " augroup END
 
-colorscheme gotham
+colorscheme nord
 set background=dark
