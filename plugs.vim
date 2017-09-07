@@ -16,7 +16,6 @@ Plug 'vimwiki/vimwiki'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-rails'
 Plug 'mmorearty/elixir-ctags'
-Plug 'slashmili/alchemist.vim'
 
 " General text editing improvements...
 Plug 'keith/investigate.vim'
@@ -40,9 +39,6 @@ Plug 'powerman/vim-plugin-AnsiEsc' " This colors the ExDocs for Alchemist
 
 " Cosmetics, color scheme, Powerline...
 Plug 'itchyny/lightline.vim'
-Plug 'whatyouhide/vim-gotham'
-Plug 'altercation/vim-colors-solarized'
 Plug 'arcticicestudio/nord-vim'
-Plug 'chriskempson/base16-vim'
 
 call plug#end()

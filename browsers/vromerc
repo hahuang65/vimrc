@@ -1,7 +1,0 @@
-" Navigation bindings
-map j 5j
-map k 5k
-map <M-d> <C-d>
-map <M-u> <C-u>
-map <M-k> gT
-map <M-j> gt

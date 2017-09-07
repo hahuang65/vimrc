@@ -144,33 +144,19 @@ if os == "Linux"
   " Yank text to the OS clipboard
   noremap <leader>y "+y
   noremap <leader>Y "+Y
-
-  " Preserve indentation while pasting text from the OS clipboard
-  noremap <leader>p :set paste<CR>:put +<CR>:set nopaste<CR>
 elseif os == "Darwin"
   " Yank text to the OS clipboard
   noremap <leader>y "*y
   noremap <leader>Y "*Y
-
-  " Preserve indentation while pasting text from the OS clipboard
-  noremap <leader>p :set paste<CR>:put *<CR>:set nopaste<CR>
 endif
+
+" Preserve indentation while pasting text from the OS clipboard
+noremap <leader>p :put *<CR>
 
 " Jump to end of pasted text
 vnoremap <silent> y y`]
 vnoremap <silent> p p`]
 nnoremap <silent> p p`]
-
-" Prevent pasting from trouncing paste buffer
-function! RestoreRegister()
-  let @" = s:restore_reg
-  return ''
-endfunction
-function! s:Repl()
-  let s:restore_reg = @"
-  return "p@=RestoreRegister()\<CR>"
-endfunction
-vmap <silent> <expr> p <sid>Repl()
 
 " Select text that was just pasted
 noremap gV `[v`]
