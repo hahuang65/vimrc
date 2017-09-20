@@ -24,3 +24,6 @@ set hintchars=asdfghjkl
 
 " Navigation bindings
 noremap x d
+
+nmap a <Nop>
+nmap <S-a> <Nop>
