@@ -2,6 +2,7 @@
 " Vim plugin configuration
 " ========================================
 "
+set rtp+=/usr/local/opt/fzf
 
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
@@ -21,8 +22,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 
 " General vim improvements
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --no-update-rc' }
-Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf.vim' " Requires that fzf is installed
 Plug 'justinmk/vim-dirvish'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
