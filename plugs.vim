@@ -20,6 +20,8 @@ Plug 'mmorearty/elixir-ctags'
 Plug 'keith/investigate.vim'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
+Plug 'junegunn/goyo.vim'
+Plug 'junegunn/limelight.vim'
 
 " General vim improvements
 Plug 'junegunn/fzf.vim' " Requires that fzf is installed

@@ -1,6 +1,7 @@
 .netrwhist
-bundle
-autoload
-plugged
-init.vim
 .init.vim-rplugin~
+autoload
+bundle
+ftplugin
+pack
+plugged
