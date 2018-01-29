@@ -20,7 +20,6 @@ Plug 'mmorearty/elixir-ctags'
 Plug 'keith/investigate.vim'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-repeat'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
 
@@ -31,7 +30,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'junegunn/vim-slash'
 Plug 'ludovicchabant/vim-gutentags'
-Plug 'christoomey/vim-tmux-navigator'
 Plug 'wincent/terminus'
 
 " Cosmetics, color scheme, Powerline...
