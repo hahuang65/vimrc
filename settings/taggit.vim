@@ -1,1 +1,2 @@
-command ShowTags /<\([A-Z]\+\)>.\{-}<\/\1> " Shows tags while using Taggit gem.
+" Shows tags while using Taggit gem.
+command ShowTags /<\([A-Z]\+\)>.\{-}<\/\1>
