@@ -20,6 +20,7 @@ Plug 'mmorearty/elixir-ctags'
 Plug 'keith/investigate.vim'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-repeat'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
 

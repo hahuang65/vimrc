@@ -71,9 +71,10 @@ set tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 " ================ Line Breaks ====================
 
 " Don't wrap lines physically (auto insertion of newlines)
-set nowrap       "Don't wrap lines
+set nowrap "Don't wrap lines
+set nolist " list disables linebreak
 set textwidth=0 wrapmargin=0
-set nolist  " list disables linebreak
+set colorcolumn=80
 set sidescroll=5
 set listchars+=precedes:<,extends:>
 
