@@ -11,6 +11,8 @@ endif
 
 call plug#begin('~/.vim/plugged')
 
+Plug 'vimwiki/vimwiki'
+
 " Languages
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-rails'
