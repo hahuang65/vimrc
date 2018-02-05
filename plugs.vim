@@ -19,11 +19,9 @@ Plug 'tpope/vim-rails'
 Plug 'mmorearty/elixir-ctags'
 
 " General text editing improvements...
-Plug 'keith/investigate.vim'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
-Plug 'junegunn/goyo.vim'
-Plug 'junegunn/limelight.vim'
+Plug 'tpope/vim-repeat'
 
 " General vim improvements
 Plug 'junegunn/fzf.vim' " Requires that fzf is installed
