@@ -1,2 +1,2 @@
-colorscheme base16-bespin
+colorscheme base16-dracula
 set background=dark
