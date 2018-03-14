@@ -5,3 +5,9 @@ if [ ! -f "${HOME}/.vim/autoload/plug.vim" ]; then
 fi
 
 ln -sf "${PWD}/vimrc" "${HOME}/.vimrc"
+
+if [ -d "${HOME}/.vim/ftplugin" ]; then
+  rm -rf "${HOME}/.vim/ftplugin"
+fi
+
+ln -sf "${PWD}/ftplugin" "${HOME}/.vim/ftplugin"
