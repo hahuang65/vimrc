@@ -140,18 +140,21 @@ nmap <silent> <c-l> :wincmd l<CR>
 
 let os = substitute(system('uname'), "\n", "", "")
 
+" Yank text to the OS clipboard
 if os == "Linux"
-  " Yank text to the OS clipboard
   noremap <leader>y "+y
   noremap <leader>Y "+Y
 elseif os == "Darwin"
-  " Yank text to the OS clipboard
   noremap <leader>y "*y
   noremap <leader>Y "*Y
 endif
 
 " Preserve indentation while pasting text from the OS clipboard
-noremap <leader>p :put *<CR>
+if os == "Linux"
+  noremap <leader>p :put +<CR>
+elseif os == "Darwin"
+  noremap <leader>p :put *<CR>
+endif
 
 " Jump to end of pasted text
 vnoremap <silent> y y`]
