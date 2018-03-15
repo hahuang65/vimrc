@@ -1,3 +1,3 @@
 augroup vimwiki
-  au! BufWritePost ~/Dropbox/Wiki/* !pushd ~/Dropbox/Wiki; git add "%";git commit -m "Auto commit of %:t." "%";popd
+  au! BufWritePost ~/Dropbox/Wiki/* !pushd ~/Dropbox/Wiki; git add -A;git commit -m "Auto commit";popd
 augroup END
