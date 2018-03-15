@@ -1,1 +1,1 @@
-let g:vimwiki_list = [{'path': '$HOME/Dropbox/Wiki', 'syntax': 'markdown', 'ext': '.md'}]
+let g:vimwiki_list = [{'path': '$HOME/Dropbox/Wiki', 'syntax': 'markdown', 'ext': '.md', 'index': 'Home'}]
