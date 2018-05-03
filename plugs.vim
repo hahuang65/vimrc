@@ -17,6 +17,7 @@ Plug 'vimwiki/vimwiki'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-rails'
 Plug 'mmorearty/elixir-ctags'
+Plug 'w0rp/ale'
 
 " General text editing improvements...
 Plug 'tpope/vim-surround'
@@ -34,6 +35,7 @@ Plug 'wincent/terminus'
 
 " Cosmetics, color scheme, Powerline...
 Plug 'itchyny/lightline.vim'
+Plug 'maximbaz/lightline-ale'
 Plug 'whatyouhide/vim-gotham'
 
 call plug#end()
