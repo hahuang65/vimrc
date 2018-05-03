@@ -34,6 +34,6 @@ Plug 'wincent/terminus'
 
 " Cosmetics, color scheme, Powerline...
 Plug 'itchyny/lightline.vim'
-Plug 'chriskempson/base16-vim'
+Plug 'whatyouhide/vim-gotham'
 
 call plug#end()

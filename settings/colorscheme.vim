@@ -1,2 +1,2 @@
-colorscheme base16-dracula
+colorscheme gotham
 set background=dark
