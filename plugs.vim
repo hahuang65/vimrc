@@ -28,7 +28,7 @@ Plug 'tpope/vim-repeat'
 Plug 'junegunn/fzf.vim' " Requires that fzf is installed
 Plug 'justinmk/vim-dirvish'
 Plug 'tpope/vim-fugitive'
-Plug 'airblade/vim-gitgutter'
+Plug 'mhinz/vim-signify'
 Plug 'junegunn/vim-slash'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'wincent/terminus'
