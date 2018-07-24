@@ -23,6 +23,7 @@ Plug 'w0rp/ale'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
+Plug 'unblevable/quick-scope'
 
 " General vim improvements
 Plug 'junegunn/fzf.vim' " Requires that fzf is installed
