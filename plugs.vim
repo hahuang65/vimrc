@@ -33,6 +33,6 @@ Plug 'wincent/terminus'
 
 " Cosmetics, color scheme, Powerline...
 Plug 'itchyny/lightline.vim'
-Plug 'whatyouhide/vim-gotham'
+Plug 'arcticicestudio/nord-vim'
 
 call plug#end()
