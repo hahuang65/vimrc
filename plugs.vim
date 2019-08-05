@@ -25,6 +25,7 @@ Plug 'unblevable/quick-scope'
 " General vim improvements
 Plug 'junegunn/fzf.vim' " Requires that fzf is installed
 Plug 'justinmk/vim-dirvish'
+Plug 'kristijanhusak/vim-dirvish-git'
 Plug 'tpope/vim-fugitive'
 Plug 'mhinz/vim-signify'
 Plug 'junegunn/vim-slash'
