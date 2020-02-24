@@ -27,13 +27,15 @@ Plug 'unblevable/quick-scope'
 Plug 'camspiers/animate.vim'
 Plug 'camspiers/lens.vim'
 Plug 'junegunn/fzf.vim' " Requires that fzf is installed
-Plug 'justinmk/vim-dirvish'
+Plug 'junegunn/vim-peekaboo'
 Plug 'junegunn/vim-slash'
+Plug 'justinmk/vim-dirvish'
 Plug 'kristijanhusak/vim-dirvish-git'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-fugitive'
 Plug 'wincent/terminus'
+Plug 'Yilin-Yang/vim-markbar'
 
 " Cosmetics, color scheme, Powerline...
 Plug 'arcticicestudio/nord-vim'
