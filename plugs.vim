@@ -12,28 +12,31 @@ endif
 call plug#begin('~/.vim/plugged')
 
 " Languages
-Plug 'sheerun/vim-polyglot'
-Plug 'tpope/vim-rails'
 Plug 'mmorearty/elixir-ctags'
+Plug 'tpope/vim-rails'
+Plug 'sheerun/vim-polyglot'
 
 " General text editing improvements...
+Plug 'wellle/context.vim'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
 Plug 'unblevable/quick-scope'
 
 " General vim improvements
+Plug 'camspiers/animate.vim'
+Plug 'camspiers/lens.vim'
 Plug 'junegunn/fzf.vim' " Requires that fzf is installed
 Plug 'justinmk/vim-dirvish'
-Plug 'kristijanhusak/vim-dirvish-git'
-Plug 'tpope/vim-fugitive'
-Plug 'mhinz/vim-signify'
 Plug 'junegunn/vim-slash'
+Plug 'kristijanhusak/vim-dirvish-git'
 Plug 'ludovicchabant/vim-gutentags'
+Plug 'mhinz/vim-signify'
+Plug 'tpope/vim-fugitive'
 Plug 'wincent/terminus'
 
 " Cosmetics, color scheme, Powerline...
-Plug 'itchyny/lightline.vim'
 Plug 'arcticicestudio/nord-vim'
+Plug 'itchyny/lightline.vim'
 
 call plug#end()

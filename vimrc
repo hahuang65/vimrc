@@ -120,15 +120,17 @@ set splitright
 
 " ================ Movement ========================
 
-" Disable arrow keys.
-noremap <up> <nop>
-noremap <down> <nop>
-noremap <left> <nop>
-noremap <right> <nop>
+" Disable arrow keys for insert mode
 inoremap <up> <nop>
 inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
+
+" Use arrow keys to resize windows in normal mode. Requires animate.vim
+nnoremap <silent> <Up>    :call animate#window_delta_height(10)<CR>
+nnoremap <silent> <Down>  :call animate#window_delta_height(-10)<CR>
+nnoremap <silent> <Left>  :call animate#window_delta_width(10)<CR>
+nnoremap <silent> <Right> :call animate#window_delta_width(-10)<CR>
 
 " Use <c-[hjkl]> to move around windows
 nmap <silent> <c-k> :wincmd k<CR>
