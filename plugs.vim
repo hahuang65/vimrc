@@ -13,6 +13,7 @@ call plug#begin('~/.vim/plugged')
 
 " Languages
 Plug 'mmorearty/elixir-ctags'
+Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-rails'
 Plug 'sheerun/vim-polyglot'
 
@@ -34,6 +35,7 @@ Plug 'kshenoy/vim-signature'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-fugitive'
+Plug 'vim-scripts/restore_view.vim'
 Plug 'wincent/terminus'
 Plug 'Yilin-Yang/vim-markbar'
 

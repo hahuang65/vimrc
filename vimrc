@@ -80,7 +80,7 @@ set listchars+=precedes:<,extends:>
 
 " ================ Folds ============================
 
-set foldmethod=indent   " Fold based on indent
+set foldmethod=syntax   " Fold based on syntax
 set foldnestmax=3       " Deepest fold is 3 levels
 set nofoldenable        " Don't fold by default
 
