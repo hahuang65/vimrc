@@ -14,3 +14,5 @@ let g:silicon = {
       \   'round-corner':          v:true,
       \   'window-controls':       v:true,
       \ }
+
+let g:silicon['output'] = '~/Downloads/silicon-{time:%Y-%m-%d-%H%M%S}.png'
