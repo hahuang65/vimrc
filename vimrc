@@ -26,6 +26,7 @@ set ffs=unix,dos,mac                " Unix as the standard file type
 set laststatus=2                    " Always show the statusline
 set number                          " Show line numbers
 set guioptions-=r                   " Remove scrollbar for GUI Vim.
+set formatoptions+=j                " Set joining lines to be smarter
 map q: :q
 map :Q :q
 map :W :w
