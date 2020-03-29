@@ -18,6 +18,7 @@ Plug 'tpope/vim-rails'
 Plug 'sheerun/vim-polyglot'
 
 " General text editing improvements...
+Plug 'andymass/vim-matchup'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
