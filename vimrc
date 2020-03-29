@@ -19,7 +19,6 @@ set showcmd                         " Show incomplete commands at the bottom
 set showmode                        " Show current mode at the bottom
 set ruler                           " Always show the current position
 set backspace=indent,eol,start      " Allow backspace to delete everything
-set autoread                        " Auto reload file when it's changed in the background
 set showmatch                       " Show matching brackets and parentheses
 syntax enable                       " Syntax highlighting
 set encoding=utf-8                  " Force UTF-8 as standard encoding
@@ -30,6 +29,17 @@ set guioptions-=r                   " Remove scrollbar for GUI Vim.
 map q: :q
 map :Q :q
 map :W :w
+
+" Auto reload file when it's changed in the background
+set autoread
+if ! exists("g:CheckUpdateStarted")
+    let g:CheckUpdateStarted=1
+    call timer_start(1,'CheckUpdate')
+endif
+function! CheckUpdate(timer)
+    silent! checktime
+    call timer_start(1000,'CheckUpdate')
+endfunction
 
 " Key timeouts
 set timeoutlen=250 ttimeoutlen=0
@@ -102,7 +112,7 @@ set wildignore+=*.so,*.swp,*.zip
 
 " ================ Search =======================
 
-set ignorecase
+set infercase
 set smartcase
 set incsearch       " Incremental search as you type
 set hlsearch        " Highlight search results
