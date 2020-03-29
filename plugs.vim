@@ -42,6 +42,7 @@ Plug 'Yilin-Yang/vim-markbar'
 
 " Cosmetics, color scheme, Powerline...
 Plug 'arcticicestudio/nord-vim'
+Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'itchyny/lightline.vim'
 
 call plug#end()
