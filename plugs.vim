@@ -19,7 +19,7 @@ Plug 'sheerun/vim-polyglot'
 
 " General text editing improvements...
 Plug 'andymass/vim-matchup'
-Plug 'TaDaa/vimade'
+Plug 'itchyny/vim-cursorword'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
@@ -36,7 +36,8 @@ Plug 'kristijanhusak/vim-dirvish-git'
 Plug 'kshenoy/vim-signature'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'mhinz/vim-signify'
-Plug 'segeljakt/vim-silicon'
+Plug 'segeljakt/vim-silicon' " Requires that silicon is installed
+Plug 'TaDaa/vimade'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-scripts/restore_view.vim'
 Plug 'wincent/terminus'
