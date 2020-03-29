@@ -19,6 +19,7 @@ Plug 'sheerun/vim-polyglot'
 
 " General text editing improvements...
 Plug 'andymass/vim-matchup'
+Plug 'TaDaa/vimade'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
