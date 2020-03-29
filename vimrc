@@ -25,6 +25,7 @@ set encoding=utf-8                  " Force UTF-8 as standard encoding
 set ffs=unix,dos,mac                " Unix as the standard file type
 set laststatus=2                    " Always show the statusline
 set number                          " Show line numbers
+set lazyredraw                      " Only redraw when necessary
 set guioptions-=r                   " Remove scrollbar for GUI Vim.
 set formatoptions+=j                " Set joining lines to be smarter
 map q: :q
