@@ -43,6 +43,8 @@ function! CheckUpdate(timer)
     call timer_start(1000,'CheckUpdate')
 endfunction
 
+set updatetime=750 " Shorter updatetime for faster updates
+
 " Key timeouts
 set timeoutlen=250 ttimeoutlen=0
 

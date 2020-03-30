@@ -19,7 +19,7 @@ Plug 'sheerun/vim-polyglot'
 
 " General text editing improvements...
 Plug 'andymass/vim-matchup'
-Plug 'itchyny/vim-cursorword'
+Plug 'rrethy/vim-illuminate'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
@@ -28,6 +28,7 @@ Plug 'unblevable/quick-scope'
 " General vim improvements
 Plug 'camspiers/animate.vim'
 Plug 'camspiers/lens.vim'
+Plug 'dense-analysis/ale'
 Plug 'junegunn/fzf.vim' " Requires that fzf is installed
 Plug 'junegunn/vim-peekaboo'
 Plug 'junegunn/vim-slash'
@@ -35,6 +36,7 @@ Plug 'justinmk/vim-dirvish'
 Plug 'kristijanhusak/vim-dirvish-git'
 Plug 'kshenoy/vim-signature'
 Plug 'ludovicchabant/vim-gutentags'
+Plug 'maximbaz/lightline-ale'
 Plug 'mhinz/vim-signify'
 Plug 'segeljakt/vim-silicon' " Requires that silicon is installed
 Plug 'TaDaa/vimade'
