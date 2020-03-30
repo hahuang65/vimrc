@@ -28,6 +28,8 @@ set number                          " Show line numbers
 set lazyredraw                      " Only redraw when necessary
 set guioptions-=r                   " Remove scrollbar for GUI Vim.
 set formatoptions+=j                " Set joining lines to be smarter
+set exrc                            " Enable reading of local .vimrc files
+set secure                          " Only read local .vimrc files owned by me
 map q: :q
 map :Q :q
 map :W :w
