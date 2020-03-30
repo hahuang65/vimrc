@@ -1,3 +1,3 @@
 let g:ale_linters = {
-  \ 'ruby': ['ruby', 'sorbet', 'standardrb']
+  \ 'ruby': ['ruby', 'rubocop', 'sorbet', 'standardrb']
 \ }
