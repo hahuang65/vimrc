@@ -30,6 +30,8 @@ Plug 'camspiers/animate.vim'
 Plug 'camspiers/lens.vim'
 Plug 'dense-analysis/ale'
 Plug 'junegunn/fzf.vim' " Requires that fzf is installed
+Plug 'junegunn/goyo.vim'
+Plug 'junegunn/limelight.vim'
 Plug 'junegunn/vim-peekaboo'
 Plug 'junegunn/vim-slash'
 Plug 'justinmk/vim-dirvish'

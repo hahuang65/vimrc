@@ -13,6 +13,7 @@ if filereadable(expand("~/.dotfiles/vim/plugs.vim"))
 endif
 
 " ================ General ==========================
+syntax enable                       " Syntax highlighting
 
 set history=1000                    " Store :cmdline history.
 set showcmd                         " Show incomplete commands at the bottom
@@ -20,7 +21,6 @@ set showmode                        " Show current mode at the bottom
 set ruler                           " Always show the current position
 set backspace=indent,eol,start      " Allow backspace to delete everything
 set showmatch                       " Show matching brackets and parentheses
-syntax enable                       " Syntax highlighting
 set encoding=utf-8                  " Force UTF-8 as standard encoding
 set ffs=unix,dos,mac                " Unix as the standard file type
 set laststatus=2                    " Always show the statusline
@@ -45,7 +45,7 @@ function! CheckUpdate(timer)
     call timer_start(1000,'CheckUpdate')
 endfunction
 
-set updatetime=750 " Shorter updatetime for faster updates
+set updatetime=50 " Shorter updatetime for faster updates
 
 " Key timeouts
 set timeoutlen=250 ttimeoutlen=0
