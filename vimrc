@@ -15,21 +15,24 @@ endif
 " ================ General ==========================
 syntax enable                       " Syntax highlighting
 
-set history=1000                    " Store :cmdline history.
-set showcmd                         " Show incomplete commands at the bottom
-set showmode                        " Show current mode at the bottom
-set ruler                           " Always show the current position
 set backspace=indent,eol,start      " Allow backspace to delete everything
-set showmatch                       " Show matching brackets and parentheses
 set encoding=utf-8                  " Force UTF-8 as standard encoding
-set ffs=unix,dos,mac                " Unix as the standard file type
-set laststatus=2                    " Always show the statusline
-set number                          " Show line numbers
-set lazyredraw                      " Only redraw when necessary
-set guioptions-=r                   " Remove scrollbar for GUI Vim.
-set formatoptions+=j                " Set joining lines to be smarter
 set exrc                            " Enable reading of local .vimrc files
+set ffs=unix,dos,mac                " Unix as the standard file type
+set formatoptions+=j                " Set joining lines to be smarter
+set guioptions-=r                   " Remove scrollbar for GUI Vim.
+set history=1000                    " Store :cmdline history.
+set laststatus=2                    " Always show the statusline
+set lazyredraw                      " Only redraw when necessary
+set number                          " Show line numbers
+set ruler                           " Always show the current position
 set secure                          " Only read local .vimrc files owned by me
+set signcolumn=yes                  " Always show the signcolumn
+set shortmess+=c                    " Don't pass messages to |ins-completion-menu|
+set showcmd                         " Show incomplete commands at the bottom
+set showmatch                       " Show matching brackets and parentheses
+set showmode                        " Show current mode at the bottom
+
 map q: :q
 map :Q :q
 map :W :w
@@ -64,7 +67,7 @@ set secure          " disable unsafe commands in local .vimrc files
 
 set noswapfile
 set nobackup
-set nowb
+set nowritebackup
 
 " ================ Persistent Undo ==================
 " Keep undo history across sessions, by storing in file.
@@ -103,7 +106,6 @@ set nofoldenable        " Don't fold by default
 " ================ Completion =======================
 
 set wildmode=list:longest
-set wildmenu                      " Enable ctrl-n and ctrl-p to scroll thru matches
 set wildignore=*.o,*.obj,*~       " Stuff to ignore when tab completing
 set wildignore+=*vim/backups*
 set wildignore+=*sass-cache*

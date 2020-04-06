@@ -19,6 +19,7 @@ Plug 'sheerun/vim-polyglot'
 
 " General text editing improvements...
 Plug 'andymass/vim-matchup'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'rrethy/vim-illuminate'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
