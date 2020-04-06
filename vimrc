@@ -100,8 +100,7 @@ set listchars+=precedes:<,extends:>
 " ================ Folds ============================
 
 set foldmethod=syntax   " Fold based on syntax
-set foldnestmax=3       " Deepest fold is 3 levels
-set nofoldenable        " Don't fold by default
+set foldlevel=1         " Start with documents folded, as a reminder folds exist
 
 " ================ Completion =======================
 
