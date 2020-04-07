@@ -35,6 +35,10 @@ function! s:show_documentation()
   endif
 endfunction
 
+" Disable auto-preview of references list
+let g:coc_enable_locationlist = 0
+autocmd User CocLocationsChange CocList --normal location
+
 " Highlight the symbol and its references when holding the cursor.
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
