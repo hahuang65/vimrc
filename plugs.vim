@@ -18,8 +18,9 @@ Plug 'tpope/vim-rails'
 Plug 'sheerun/vim-polyglot'
 
 " General text editing improvements...
+Plug 'ajh17/VimCompletesMe'
 Plug 'andymass/vim-matchup'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'natebosch/vim-lsc'
 Plug 'rrethy/vim-illuminate'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
@@ -34,6 +35,7 @@ Plug 'junegunn/fzf.vim' " Requires that fzf is installed
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
 Plug 'junegunn/vim-peekaboo'
+Plug 'junegunn/vim-slash'
 Plug 'justinmk/vim-dirvish'
 Plug 'kristijanhusak/vim-dirvish-git'
 Plug 'kshenoy/vim-signature'
