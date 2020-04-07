@@ -16,6 +16,7 @@ endif
 syntax enable                       " Syntax highlighting
 
 set backspace=indent,eol,start      " Allow backspace to delete everything
+set cmdheight=3                     " A few more lines for command outputs
 set encoding=utf-8                  " Force UTF-8 as standard encoding
 set exrc                            " Enable reading of local .vimrc files
 set ffs=unix,dos,mac                " Unix as the standard file type

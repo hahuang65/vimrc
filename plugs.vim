@@ -18,14 +18,19 @@ Plug 'tpope/vim-rails'
 Plug 'sheerun/vim-polyglot'
 
 " General text editing improvements...
-Plug 'ajh17/VimCompletesMe'
 Plug 'andymass/vim-matchup'
-Plug 'natebosch/vim-lsc'
 Plug 'rrethy/vim-illuminate'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
 Plug 'unblevable/quick-scope'
+
+" Language Server Protocols
+Plug 'mattn/vim-lsp-settings' " Make LSP easier to install for vim-lsp
+Plug 'prabirshrestha/asyncomplete.vim'
+Plug 'prabirshrestha/async.vim'
+Plug 'prabirshrestha/vim-lsp'
+Plug 'prabirshrestha/asyncomplete-lsp.vim'
 
 " General vim improvements
 Plug 'camspiers/animate.vim'
