@@ -29,13 +29,13 @@ Plug 'unblevable/quick-scope'
 Plug 'mattn/vim-lsp-settings' " Make LSP easier to install for vim-lsp
 Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/async.vim'
-Plug 'prabirshrestha/vim-lsp'
+Plug 'prabirshrestha/vim-lsp' " https://github.com/prabirshrestha/vim-lsp/wiki/Servers
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
 
 " General vim improvements
 Plug 'camspiers/animate.vim'
 Plug 'camspiers/lens.vim'
-Plug 'dense-analysis/ale'
+Plug 'dense-analysis/ale' " https://github.com/dense-analysis/ale/blob/master/supported-tools.md
 Plug 'junegunn/fzf.vim' " Requires that fzf is installed
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
