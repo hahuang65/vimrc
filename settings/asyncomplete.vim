@@ -6,4 +6,8 @@ inoremap <expr> <CR>    pumvisible() ? asyncomplete#close_popup() . "\<CR>" : "\
 imap <c-space> <Plug>(asyncomplete_force_refresh)
 
 set completeopt+=preview " Enable preview window
-autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif " Close preview when completion is done
+
+" Close preview when completion is done
+augroup asyncomplete
+  autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
+augroup END

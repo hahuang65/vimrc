@@ -3,12 +3,12 @@
 set nocompatible
 
 " Map the leader key. Must happen before Plug so all the settings can be set accordingly.
-let mapleader = " "
+let mapleader = ' '
 
 " =============== Plug Initialization ===============
 " This loads all the plugins specified in ~/.dotfiles/vim/plugs.vim
 " Use Plug to manage all other plugins
-if filereadable(expand("~/.dotfiles/vim/plugs.vim"))
+if filereadable(expand('~/.dotfiles/vim/plugs.vim'))
   source ~/.dotfiles/vim/plugs.vim
 endif
 
@@ -19,7 +19,7 @@ set backspace=indent,eol,start      " Allow backspace to delete everything
 set cmdheight=3                     " A few more lines for command outputs
 set encoding=utf-8                  " Force UTF-8 as standard encoding
 set exrc                            " Enable reading of local .vimrc files
-set ffs=unix,dos,mac                " Unix as the standard file type
+set fileformats=unix,dos,mac                " Unix as the standard file type
 set formatoptions+=j                " Set joining lines to be smarter
 set guioptions-=r                   " Remove scrollbar for GUI Vim.
 set history=1000                    " Store :cmdline history.
@@ -40,7 +40,7 @@ map :W :w
 
 " Auto reload file when it's changed in the background
 set autoread
-if ! exists("g:CheckUpdateStarted")
+if ! exists('g:CheckUpdateStarted')
     let g:CheckUpdateStarted=1
     call timer_start(1,'CheckUpdate')
 endif
@@ -158,21 +158,21 @@ nmap <silent> <c-l> :wincmd l<CR>
 
 " ================ Copy and Paste ========================
 
-let os = substitute(system('uname'), "\n", "", "")
+let os = substitute(system('uname'), '\n', '', '')
 
 " Yank text to the OS clipboard
-if os == "Linux"
+if os ==# 'Linux'
   noremap <leader>y "+y
   noremap <leader>Y "+Y
-elseif os == "Darwin"
+elseif os ==# 'Darwin'
   noremap <leader>y "*y
   noremap <leader>Y "*Y
 endif
 
 " Preserve indentation while pasting text from the OS clipboard
-if os == "Linux"
+if os ==# 'Linux'
   noremap <leader>p :put +<CR>
-elseif os == "Darwin"
+elseif os ==# 'Darwin'
   noremap <leader>p :put *<CR>
 endif
 

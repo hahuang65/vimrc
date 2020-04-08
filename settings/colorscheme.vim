@@ -1,6 +1,6 @@
 " If on MacOS, enable italics since xterm-256-color doesn't support it by
 " default
-if os == "Darwin"
+if os ==# 'Darwin'
   let &t_ZH="\e[3m"
   let &t_ZR="\e[23m"
 endif
