@@ -16,6 +16,7 @@ Plug 'mmorearty/elixir-ctags'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-rails'
 Plug 'sheerun/vim-polyglot'
+Plug 'rhysd/committia.vim'
 
 " General text editing improvements...
 Plug 'andymass/vim-matchup'
