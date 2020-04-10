@@ -48,6 +48,7 @@ Plug 'kshenoy/vim-signature'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'maximbaz/lightline-ale'
 Plug 'mhinz/vim-signify'
+Plug 'mtth/scratch.vim'
 Plug 'segeljakt/vim-silicon' " Requires that silicon is installed
 Plug 'TaDaa/vimade'
 Plug 'tpope/vim-fugitive'
