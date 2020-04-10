@@ -37,6 +37,7 @@ Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'camspiers/animate.vim'
 Plug 'camspiers/lens.vim'
 Plug 'dense-analysis/ale' " https://github.com/dense-analysis/ale/blob/master/supported-tools.md
+Plug 'janko/vim-test'
 Plug 'junegunn/fzf.vim' " Requires that fzf is installed
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'

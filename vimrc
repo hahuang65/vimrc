@@ -188,6 +188,11 @@ noremap gV `[v`]
 xnoremap <  <gv
 xnoremap >  >gv
 
+" This will change the word under the cursor at the same time as searching it,
+" allowing further changes to be done with a simple `.`, or to continue moving
+" to the next/previous instance with `n`/`N`
+nnoremap c* *Ncgn
+
 " ================ Custom Settings ========================
 for fpath in split(globpath('~/.dotfiles/vim/settings', '*.vim'), '\n')
   exe 'source' fpath
