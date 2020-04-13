@@ -52,6 +52,7 @@ Plug 'mhinz/vim-signify'
 Plug 'segeljakt/vim-silicon' " Requires that silicon is installed
 Plug 'TaDaa/vimade'
 Plug 'tpope/vim-fugitive'
+Plug 'vimwiki/vimwiki'
 Plug 'wincent/terminus'
 Plug 'Yilin-Yang/vim-markbar'
 
