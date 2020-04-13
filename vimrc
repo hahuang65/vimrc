@@ -166,6 +166,19 @@ nmap <silent> <c-j> :wincmd j<CR>
 nmap <silent> <c-h> :wincmd h<CR>
 nmap <silent> <c-l> :wincmd l<CR>
 
+" Hides all other windows except the current
+nnoremap <localleader>o :only <CR>
+
+" Open penultimately accessed buffer
+nnoremap <localleader><localleader> <C-^>
+
+" -- File Manipulation -------------------------------------------------------
+" Show full path of current file
+nnoremap <localleader>p :echo expand('%')<CR>
+
+" Edit file in same directory as current
+nnoremap <localleader>e :edit <C-R>=expand('%:p:h') . '/'<CR>
+
 " -- Macros ------------------------------------------------------------------
 " Repeat last macro if in a normal buffer
 nnoremap <expr> <CR> empty(&buftype) ? '@@' : '<CR>'
