@@ -11,8 +11,8 @@ function! s:on_lsp_buffer_enabled() abort
     "   \ foldexpr=lsp#ui#vim#folding#foldexpr()
     "   \ foldtext=lsp#ui#vim#folding#foldtext()
 
-    nmap <buffer> <localleader>d <plug>(lsp-peek-definition)
-    nmap <buffer> <localleader>D <plug>(lsp-definition)
+    nmap <buffer> gd <plug>(lsp-peek-definition)
+    nmap <buffer> gD <plug>(lsp-definition)
     nmap <buffer> <localleader>r <plug>(lsp-references)
     nmap <buffer> <localleader>R <plug>(lsp-rename)
     nmap <buffer> K <plug>(lsp-hover)
