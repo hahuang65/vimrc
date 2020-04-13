@@ -1,44 +1,54 @@
-" =============== Required and Initial Settings ===============
-" Use Vim settings rather than Vi settings. Must be first, it affects other options
-set nocompatible
+" == Required and Initial Settings ===========================================
+set nocompatible " Use Vim vs Vi settings. Must be first, affects other options
 
-" Map the leader key. Must happen before Plug so all the settings can be set accordingly.
+" -- Leader Keys -------------------------------------------------------------
+" Must happen before plugins load so all the settings can be set accordingly
 let mapleader = ' '
+let maplocalleader = "\\"
 
-" =============== Plug Initialization ===============
+" -- Plug Initialization -----------------------------------------------------
 " This loads all the plugins specified in ~/.dotfiles/vim/plugs.vim
-" Use Plug to manage all other plugins
 if filereadable(expand('~/.dotfiles/vim/plugs.vim'))
   source ~/.dotfiles/vim/plugs.vim
 endif
 
-" ================ General ==========================
-syntax enable                       " Syntax highlighting
+" == Options =================================================================
 
-set backspace=indent,eol,start      " Allow backspace to delete everything
-set cmdheight=3                     " A few more lines for command outputs
-set encoding=utf-8                  " Force UTF-8 as standard encoding
-set exrc                            " Enable reading of local .vimrc files
-set fileformats=unix,dos,mac                " Unix as the standard file type
-set formatoptions+=j                " Set joining lines to be smarter
-set guioptions-=r                   " Remove scrollbar for GUI Vim.
-set history=1000                    " Store :cmdline history.
-set laststatus=2                    " Always show the statusline
-set lazyredraw                      " Only redraw when necessary
-set number                          " Show line numbers
-set ruler                           " Always show the current position
-set secure                          " Only read local .vimrc files owned by me
-set signcolumn=yes                  " Always show the signcolumn
-set shortmess+=c                    " Don't pass messages to |ins-completion-menu|
-set showcmd                         " Show incomplete commands at the bottom
-set showmatch                       " Show matching brackets and parentheses
-set showmode                        " Show current mode at the bottom
+" -- General -----------------------------------------------------------------
+syntax enable " Syntax highlighting
 
-map q: :q
-map :Q :q
-map :W :w
+set backspace=indent,eol,start " Allow backspace to delete everything
+set formatoptions+=j           " Set joining lines to be smarter
+set hidden                     " Allows hiding a buffer without saving
 
-" Auto reload file when it's changed in the background
+" -- File Formats ------------------------------------------------------------
+set encoding=utf-8           " Force UTF-8 as standard encoding
+set fileformats=unix,dos,mac " Unix as the standard file type
+
+" -- Performance -------------------------------------------------------------
+set updatetime=50  " Faster intervals between CursorHold events
+set timeoutlen=250 " Timeout for mappings
+set ttimeoutlen=-1 " Timeout for key codes, -1 means use `timeoutlen`
+
+" -- User Interface ----------------------------------------------------------
+set guioptions-=r  " Remove scrollbar for GUI Vim
+set lazyredraw     " Don't redraw for macros and commands that aren't typed
+set number         " Show line numbers
+set signcolumn=yes " Always show the signcolumn
+set showmatch      " Show matching brackets and parentheses
+
+" -- Status Line -------------------------------------------------------------
+set laststatus=2 " Always show the statusline
+set ruler        " Always show the current position
+set showmode     " Always show current mode in statusline
+
+" -- Command Line ------------------------------------------------------------
+set cmdheight=3  " A few more lines for command outputs
+set history=1000 " Store 1000 lines of command history
+set showcmd      " Show incomplete commands at the bottom
+
+" -- Auto Reload -------------------------------------------------------------
+"  Automatically reload buffer every second, using Vim's timer feature
 set autoread
 if ! exists('g:CheckUpdateStarted')
     let g:CheckUpdateStarted=1
@@ -49,64 +59,52 @@ function! CheckUpdate(timer)
     call timer_start(1000,'CheckUpdate')
 endfunction
 
-set updatetime=50 " Shorter updatetime for faster updates
+" -- Local vimrc -------------------------------------------------------------
+set exrc   " enable per-directory .vimrc files
+set secure " disable unsafe commands in local .vimrc files
 
-" Key timeouts
-set timeoutlen=250 ttimeoutlen=0
-
-" The current buffer can be put to the background without writing to disk;
-" When a background buffer becomes current again, marks and undo-history are remembered.
-" http://items.sjbach.com/319/configuring-vim-right
-set hidden
-
-" ================ Dir specific vimrc ===============
-
-set exrc            " enable per-directory .vimrc files
-set secure          " disable unsafe commands in local .vimrc files
-
-" ================ Turn Off Swap Files ==============
-
+" -- Swap Files --------------------------------------------------------------
+" Disable swap and backup files polluting the filesystem
 set noswapfile
 set nobackup
 set nowritebackup
 
-" ================ Persistent Undo ==================
-" Keep undo history across sessions, by storing in file.
-" Only works all the time.
+" -- Persistent Undo ---------------------------------------------------------
+" Keep undo history across sessions, by storing it in a file
 if has('persistent_undo')
   silent !mkdir ~/.vimbackups > /dev/null 2>&1
   set undodir=~/.vimbackups
   set undofile
 endif
 
-" ================ Indentation ======================
+" -- Indentation -------------------------------------------------------------
+" By setting `expandtab` and the same value to `shiftwidth` and `tabstop`, vim
+" will always insert spaces instead of tabs.
+set autoindent    " Automatically indent new line based on previous line
+set expandtab     " Soft-tabs, inserts spaces when <Tab> is used
+set shiftwidth=2  " Use 2 spaces per indent
+set smartindent   " Syntax-aware indentation (i.e. matching parens)
+set smarttab      " Use `shiftwidth` when inserting tabs at front of the line
+set softtabstop=2 " Use 2 spaces per tab when inserting text
+set tabstop=2     " Use 2 spaces per tab
 
-set autoindent        " Automatically indent
-set smartindent
-set smarttab
+" -- Line Breaks -------------------------------------------------------------
+set colorcolumn=80                  " Show a colored column guide at line 80
+set listchars+=precedes:<,extends:> " Shows < or > if line is scrollable
+set nolist                          " Disable showing tabs vs spaces
+set nowrap                          " Don't wrap lines automatically
+set textwidth=0                     " Disable linebreaks happening by line size
+set wrapmargin=0                    " Disable wrapping based on window borders
 
-" Set softtabs with 2 spaces
-set tabstop=2 softtabstop=2 shiftwidth=2 expandtab
+" -- Folds -------------------------------------------------------------------
+set foldmethod=syntax " Fold based on syntax
+set foldlevel=1       " Start with documents folded, as a reminder folds exist
 
-" ================ Line Breaks ====================
+" -- Completion --------------------------------------------------------------
+set shortmess+=c " Don't pass messages to `ins-completion-menu`
 
-" Don't wrap lines physically (auto insertion of newlines)
-set nowrap "Don't wrap lines
-set nolist " list disables linebreak
-set textwidth=0 wrapmargin=0
-set colorcolumn=80
-set sidescroll=5
-set listchars+=precedes:<,extends:>
-
-" ================ Folds ============================
-
-set foldmethod=syntax   " Fold based on syntax
-set foldlevel=1         " Start with documents folded, as a reminder folds exist
-
-" ================ Completion =======================
-
-set wildmode=list:longest
-set wildignore=*.o,*.obj,*~       " Stuff to ignore when tab completing
+" Ignore these when tab completing
+set wildignore=*.o,*.obj,*~
 set wildignore+=*vim/backups*
 set wildignore+=*sass-cache*
 set wildignore+=*DS_Store*
@@ -118,46 +116,58 @@ set wildignore+=tmp/**
 set wildignore+=*.png,*.jpg,*.gif
 set wildignore+=*.so,*.swp,*.zip
 
-" ================ Search =======================
+set wildmode=list:longest " List all matches, complete longest common string
 
-set infercase
-set smartcase
-set incsearch       " Incremental search as you type
-set hlsearch        " Highlight search results
+" -- Search ------------------------------------------------------------------
+set hlsearch  " Highlight search results
+set incsearch " Incremental search as you type
+set infercase " Basically smartcase for completion
+set smartcase " Casing for searching based on typed text
 
-" ================ Scrolling ========================
+" -- Scrolling ---------------------------------------------------------------
+set scrolloff=20     " Scroll when 20 lines away from top/bottom margins
+set sidescroll=1     " Scroll by 1 when reaching the sides of a line
+set sidescrolloff=15 " Scroll when 15 lines from side margins
 
-set scrolloff=20         "Start scrolling when we're 20 lines away from margins
-set sidescrolloff=15
-set sidescroll=1
+" -- Splits ------------------------------------------------------------------
+set splitbelow " Split towards bottom
+set splitright " Split towards right
 
-" ================ Splits ========================
+" == Mappings ================================================================
 
-set splitbelow
-set splitright
-
-" ================ Movement ========================
-
-" Disable arrow keys for insert mode
+" -- Disable Arrow Key Movement ----------------------------------------------
 inoremap <up> <nop>
 inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
 
-" Use arrow keys to resize windows in normal mode. Requires animate.vim
+" -- Use Arrow Key for resizing with animate.vim -----------------------------
 nnoremap <silent> <Up>    :call animate#window_delta_height(10)<CR>
 nnoremap <silent> <Down>  :call animate#window_delta_height(-10)<CR>
 nnoremap <silent> <Left>  :call animate#window_delta_width(10)<CR>
 nnoremap <silent> <Right> :call animate#window_delta_width(-10)<CR>
 
-" Use <c-[hjkl]> to move around windows
+" -- Window Movement ---------------------------------------------------------
 nmap <silent> <c-k> :wincmd k<CR>
 nmap <silent> <c-j> :wincmd j<CR>
 nmap <silent> <c-h> :wincmd h<CR>
 nmap <silent> <c-l> :wincmd l<CR>
 
-" ================ Copy and Paste ========================
+" -- Macros ------------------------------------------------------------------
+" Repeat last macro if in a normal buffer
+nnoremap <expr> <CR> empty(&buftype) ? '@@' : '<CR>'
 
+" -- Folds -------------------------------------------------------------------
+" Toggle folding for current position with Tab
+nnoremap <Tab> za
+
+" -- Auto-Correct Commands ---------------------------------------------------
+nmap Q q
+nmap q: :q
+nmap :Q :q
+nmap :W :w
+
+" -- Copy and Paste ----------------------------------------------------------
 let os = substitute(system('uname'), '\n', '', '')
 
 " Yank text to the OS clipboard
@@ -176,7 +186,7 @@ elseif os ==# 'Darwin'
   noremap <leader>p :put *<CR>
 endif
 
-" Jump to end of pasted text
+" Jump to end of text after pasting
 vnoremap <silent> y y`]
 vnoremap <silent> p p`]
 nnoremap <silent> p p`]
@@ -188,12 +198,16 @@ noremap gV `[v`]
 xnoremap <  <gv
 xnoremap >  >gv
 
+" Consistency, capital Y yanks til end of line
+noremap Y y$
+
+" -- Search ------------------------------------------------------------------
 " This will change the word under the cursor at the same time as searching it,
 " allowing further changes to be done with a simple `.`, or to continue moving
 " to the next/previous instance with `n`/`N`
 nnoremap c* *Ncgn
 
-" ================ Custom Settings ========================
+" ================ Plugin Settings ========================
 for fpath in split(globpath('~/.dotfiles/vim/settings', '*.vim'), '\n')
   exe 'source' fpath
 endfor
