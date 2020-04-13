@@ -6,6 +6,10 @@ set nocompatible " Use Vim vs Vi settings. Must be first, affects other options
 let mapleader = ' '
 let maplocalleader = "\\"
 
+" -- Current OS --------------------------------------------------------------
+" Figure out the current OS. Used for certain settings
+let os = substitute(system('uname'), '\n', '', '')
+
 " -- Plug Initialization -----------------------------------------------------
 " This loads all the plugins specified in ~/.dotfiles/vim/plugs.vim
 if filereadable(expand('~/.dotfiles/vim/plugs.vim'))
@@ -20,6 +24,15 @@ syntax enable " Syntax highlighting
 set backspace=indent,eol,start " Allow backspace to delete everything
 set formatoptions+=j           " Set joining lines to be smarter
 set hidden                     " Allows hiding a buffer without saving
+
+" -- Colorscheme -------------------------------------------------------------
+" Enable italics on MacOS, since xterm-256-color doesn't support it by default
+if os ==# 'Darwin'
+  let &t_ZH="\e[3m"
+  let &t_ZR="\e[23m"
+endif
+
+colorscheme dracula
 
 " -- File Formats ------------------------------------------------------------
 set encoding=utf-8           " Force UTF-8 as standard encoding
@@ -168,8 +181,6 @@ nmap :Q :q
 nmap :W :w
 
 " -- Copy and Paste ----------------------------------------------------------
-let os = substitute(system('uname'), '\n', '', '')
-
 " Yank text to the OS clipboard
 if os ==# 'Linux'
   noremap <leader>y "+y
@@ -207,7 +218,21 @@ noremap Y y$
 " to the next/previous instance with `n`/`N`
 nnoremap c* *Ncgn
 
-" ================ Plugin Settings ========================
-for fpath in split(globpath('~/.dotfiles/vim/settings', '*.vim'), '\n')
+" == Auto Commands ===========================================================
+
+" -- Trim Whitespace Before Save ---------------------------------------------
+function! TrimWhiteSpace()
+  let l = line('.')
+  let c = col('.')
+  %s/\s\+$//e
+  call cursor(l, c)
+endfunction
+
+augroup TrimWhiteSpace
+  autocmd BufWritePre * :call TrimWhiteSpace()
+augroup END
+
+" == Plugin Settings =========================================================
+for fpath in split(globpath('~/.dotfiles/vim/plug_settings', '*.vim'), '\n')
   exe 'source' fpath
 endfor
