@@ -20,3 +20,4 @@ endfunction
 
 autocmd! User GoyoEnter call <SID>goyo_enter()
 autocmd! User GoyoLeave call <SID>goyo_leave()
+autocmd! BufRead,BufNewFile *.md :Goyo 75%x75%
