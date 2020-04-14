@@ -3,3 +3,6 @@ let g:ale_linters = {
   \ 'elixir': ['credo', 'elixir-ls'],
   \ 'rust': ['cargo', 'rls', 'rustc']
 \ }
+
+" The default value only works with Rust nightly
+let g:ale_rust_rustc_options=''
