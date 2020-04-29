@@ -2,8 +2,9 @@ let g:endwise_no_mappings=1 " Compatibility issues: https://github.com/tpope/vim
 
 inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-inoremap <expr> <CR>    pumvisible() ? asyncomplete#close_popup() . "\<CR>" : "\<CR>"
-imap <c-space> <Plug>(asyncomplete_force_refresh)
+
+" https://github.com/roxma/nvim-completion-manager/issues/49#issuecomment-285923119
+imap <expr> <CR> pumvisible() ? "\<C-y>\<CR>\<Plug>DiscretionaryEnd" : "\<CR>\<Plug>DiscretionaryEnd"
 
 set completeopt+=preview " Enable preview window
 
