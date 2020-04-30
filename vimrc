@@ -165,6 +165,10 @@ nmap <silent> <c-k> :wincmd k<CR>
 nmap <silent> <c-j> :wincmd j<CR>
 nmap <silent> <c-h> :wincmd h<CR>
 nmap <silent> <c-l> :wincmd l<CR>
+tnoremap <C-k> <C-w>k
+tnoremap <C-j> <C-w>j
+tnoremap <C-h> <C-w>h
+tnoremap <C-l> <C-w>l
 
 " Hides all other windows except the current
 nnoremap <localleader>o :only <CR>
