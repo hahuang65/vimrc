@@ -235,6 +235,10 @@ noremap Y y$
 " to the next/previous instance with `n`/`N`
 nnoremap c* *Ncgn
 
+" == vimrc convenience =======================================================
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+nnoremap <leader>sv :source $MYVIMRC<cr>
+
 " == Auto Commands ===========================================================
 
 " -- Trim Whitespace Before Save ---------------------------------------------
