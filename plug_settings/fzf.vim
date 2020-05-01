@@ -5,21 +5,22 @@ noremap <leader>C :Commits<CR>
 noremap <leader>] :BTags<CR>
 noremap <leader>} :Tags<CR>
 noremap <leader>b :Buffers<CR>
-noremap <leader>/ :Rg<CR>
+noremap <leader>/ :RG<CR>
 
-" Augmenting Rg command using fzf#vim#with_preview function
-"   * fzf#vim#with_preview([[options], preview window, [toggle keys...]])
-"     * For syntax-highlighting, Ruby and any of the following tools are required:
-"       - Bat: https://github.com/sharkdp/bat
-"       - Highlight: http://www.andre-simon.de/doku/highlight/en/highlight.php
-"       - CodeRay: http://coderay.rubychan.de/
-"       - Rouge: https://github.com/jneen/rouge
-command! -bang -nargs=* Rg
-  \ call fzf#vim#grep(
-  \   'rg --column --line-number --no-heading --color=always --smart-case '.shellescape(<q-args>), 1,
-  \   <bang>0 ? fzf#vim#with_preview({'options': '--delimiter : --nth 4..'}, 'up:60%')
-  \           : fzf#vim#with_preview({'options': '--delimiter : --nth 4..'}, 'right:50%', '?'),
-  \   <bang>0)
+" * For syntax-highlighting, Ruby and any of the following tools are required:
+"   - Bat: https://github.com/sharkdp/bat
+"   - Highlight: http://www.andre-simon.de/doku/highlight/en/highlight.php
+"   - CodeRay: http://coderay.rubychan.de/
+"   - Rouge: https://github.com/jneen/rouge
+function! RipgrepFzf(query, fullscreen)
+  let command_fmt = 'rg --column --line-number --no-heading --color=always --smart-case %s || true'
+  let initial_command = printf(command_fmt, shellescape(a:query))
+  let reload_command = printf(command_fmt, '{q}')
+  let spec = {'options': ['--phony', '--query', a:query, '--bind', 'change:reload:'.reload_command]}
+  call fzf#vim#grep(initial_command, 1, fzf#vim#with_preview(spec), a:fullscreen)
+endfunction
+
+command! -nargs=* -bang RG call RipgrepFzf(<q-args>, <bang>0)
 
 " Likewise, Files command with preview window
 command! -bang -nargs=? -complete=dir Files
