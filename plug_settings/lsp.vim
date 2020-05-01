@@ -13,8 +13,8 @@ function! s:on_lsp_buffer_enabled() abort
 
     nmap <buffer> gd <plug>(lsp-peek-definition)
     nmap <buffer> gD <plug>(lsp-definition)
-    nmap <buffer> <localleader>r <plug>(lsp-references)
-    nmap <buffer> <localleader>R <plug>(lsp-rename)
+    nmap <buffer> gr <plug>(lsp-references)
+    nmap <buffer> gR <plug>(lsp-rename)
     nmap <buffer> K <plug>(lsp-hover)
 endfunction
 

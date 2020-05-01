@@ -161,10 +161,10 @@ nnoremap <silent> <Left>  :call animate#window_delta_width(10)<CR>
 nnoremap <silent> <Right> :call animate#window_delta_width(-10)<CR>
 
 " -- Window Movement ---------------------------------------------------------
-nmap <silent> <c-k> :wincmd k<CR>
-nmap <silent> <c-j> :wincmd j<CR>
-nmap <silent> <c-h> :wincmd h<CR>
-nmap <silent> <c-l> :wincmd l<CR>
+nnoremap <silent> <c-k> :wincmd k<CR>
+nnoremap <silent> <c-j> :wincmd j<CR>
+nnoremap <silent> <c-h> :wincmd h<CR>
+nnoremap <silent> <c-l> :wincmd l<CR>
 tnoremap <C-k> <C-w>k
 tnoremap <C-j> <C-w>j
 tnoremap <C-h> <C-w>h
@@ -192,10 +192,10 @@ nnoremap <expr> <CR> empty(&buftype) ? '@@' : '<CR>'
 nnoremap <Tab> za
 
 " -- Auto-Correct Commands ---------------------------------------------------
-nmap Q q
-nmap q: :q
-nmap :Q :q
-nmap :W :w
+nnoremap Q q
+nnoremap q: :q
+nnoremap :Q :q
+nnoremap :W :w
 
 " -- Copy and Paste ----------------------------------------------------------
 " Yank text to the OS clipboard

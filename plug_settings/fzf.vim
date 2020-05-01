@@ -1,11 +1,11 @@
-map <leader>t :GitFiles<CR>
-map <leader>T :Files<CR>
-map <leader>c :BCommits<CR>
-map <leader>C :Commits<CR>
-map <leader>] :BTags<CR>
-map <leader>} :Tags<CR>
-map <leader>b :Buffers<CR>
-map <leader>/ :Rg<CR>
+noremap <leader>t :GitFiles<CR>
+noremap <leader>T :Files<CR>
+noremap <leader>c :BCommits<CR>
+noremap <leader>C :Commits<CR>
+noremap <leader>] :BTags<CR>
+noremap <leader>} :Tags<CR>
+noremap <leader>b :Buffers<CR>
+noremap <leader>/ :Rg<CR>
 
 " Augmenting Rg command using fzf#vim#with_preview function
 "   * fzf#vim#with_preview([[options], preview window, [toggle keys...]])
