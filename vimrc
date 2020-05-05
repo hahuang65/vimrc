@@ -238,6 +238,8 @@ nnoremap c* *Ncgn
 " == vimrc convenience =======================================================
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
+nnoremap <leader>pi :source $MYVIMRC \| :PlugInstall<CR>
+nnoremap <leader>pu :PlugUpdate<CR>
 
 " == Auto Commands ===========================================================
 
