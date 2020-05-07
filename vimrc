@@ -1,12 +1,9 @@
-" == Required and Initial Settings ===========================================
-set nocompatible " Use Vim vs Vi settings. Must be first, affects other options
-
-" -- Leader Keys -------------------------------------------------------------
+" == Leader Keys =============================================================
 " Must happen before plugins load so all the settings can be set accordingly
 let mapleader = ' '
 let maplocalleader = "\\"
 
-" -- Current OS --------------------------------------------------------------
+" == Useful Variables ========================================================
 " Figure out the current OS. Used for certain settings
 let os = substitute(system('uname'), '\n', '', '')
 
@@ -44,7 +41,6 @@ set timeoutlen=250 " Timeout for mappings
 set ttimeoutlen=-1 " Timeout for key codes, -1 means use `timeoutlen`
 
 " -- User Interface ----------------------------------------------------------
-set guioptions-=r  " Remove scrollbar for GUI Vim
 set lazyredraw     " Don't redraw for macros and commands that aren't typed
 set number         " Show line numbers
 set signcolumn=yes " Always show the signcolumn
@@ -171,21 +167,14 @@ tnoremap <C-h> <C-w>h
 tnoremap <C-l> <C-w>l
 
 " Hides all other windows except the current
-nnoremap <localleader>o :only <CR>
-
-" Open penultimately accessed buffer
-nnoremap <localleader><localleader> <C-^>
+nnoremap <leader>o :only <CR>
 
 " -- File Manipulation -------------------------------------------------------
 " Show full path of current file
-nnoremap <localleader>p :echo expand('%')<CR>
+nnoremap <leader>p :echo expand('%')<CR>
 
 " Edit file in same directory as current
-nnoremap <localleader>e :edit <C-R>=expand('%:p:h') . '/'<CR>
-
-" -- Macros ------------------------------------------------------------------
-" Repeat last macro if in a normal buffer
-nnoremap <expr> <CR> empty(&buftype) ? '@@' : '<CR>'
+nnoremap <leader>e :edit <C-R>=expand('%:p:h') . '/'<CR>
 
 " -- Folds -------------------------------------------------------------------
 " Toggle folding for current position with Tab
@@ -229,13 +218,7 @@ xnoremap >  >gv
 " Consistency, capital Y yanks til end of line
 noremap Y y$
 
-" -- Search ------------------------------------------------------------------
-" This will change the word under the cursor at the same time as searching it,
-" allowing further changes to be done with a simple `.`, or to continue moving
-" to the next/previous instance with `n`/`N`
-nnoremap c* *Ncgn
-
-" == vimrc convenience =======================================================
+" == Configuration Convenience ===============================================
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 nnoremap <leader>pi :source $MYVIMRC \| :PlugInstall<CR>

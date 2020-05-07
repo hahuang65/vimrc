@@ -6,11 +6,6 @@ let g:lsp_log_file=''
 function! s:on_lsp_buffer_enabled() abort
     setlocal omnifunc=lsp#complete
 
-    " If the language server provides folding info:
-    " setlocal foldmethod=expr
-    "   \ foldexpr=lsp#ui#vim#folding#foldexpr()
-    "   \ foldtext=lsp#ui#vim#folding#foldtext()
-
     nmap <buffer> gd <plug>(lsp-peek-definition)
     nmap <buffer> gD <plug>(lsp-definition)
     nmap <buffer> gr <plug>(lsp-references)
