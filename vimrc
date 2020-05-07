@@ -170,9 +170,6 @@ tnoremap <C-l> <C-w>l
 nnoremap <leader>o :only <CR>
 
 " -- File Manipulation -------------------------------------------------------
-" Show full path of current file
-nnoremap <leader>p :echo expand('%')<CR>
-
 " Edit file in same directory as current
 nnoremap <leader>e :edit <C-R>=expand('%:p:h') . '/'<CR>
 
