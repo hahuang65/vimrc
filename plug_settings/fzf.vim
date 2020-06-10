@@ -5,8 +5,7 @@ noremap <leader>C :Commits<CR>
 noremap <leader>] :BTags<CR>
 noremap <leader>} :Tags<CR>
 noremap <leader>b :Buffers<CR>
-noremap <leader>/ :BLines<CR>
-noremap <leader>? :RG<CR>
+noremap <leader>/ :RG<CR>
 noremap <leader>` :Marks<CR>
 noremap <leader>' :Marks<CR>
 
