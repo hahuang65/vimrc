@@ -1,4 +1,8 @@
-let test#strategy="vimterminal"
+if has('nvim')
+  let test#strategy="neovim"
+else
+  let test#strategy="vimterminal"
+endif
 
 nnoremap <silent> <leader><leader> :TestNearest<CR>
 nnoremap <silent> <localleader><localleader> :TestFile<CR>
