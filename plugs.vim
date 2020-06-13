@@ -7,6 +7,7 @@ set runtimepath+=/usr/local/opt/fzf
 call plug#begin('~/.vim/plugged')
 
 Plug 'andymass/vim-matchup'
+Plug 'dense-analysis/ale' " https://github.com/dense-analysis/ale/blob/master/supported-tools.md
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'itchyny/lightline.vim'
 Plug 'janko/vim-test'
