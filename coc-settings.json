@@ -1,13 +1,10 @@
 {
   "codeLens.enable": true,
   "git.addGBlameToVirtualText": true,
-  "solargraph.useBundler": true,
-  "rust.clippy_preference": "on",
-  "coc.preferences.formatOnSaveFiletypes": ["rust"],
+  "rust-analyzer.checkOnSave.command": "clippy",
   "diagnostic-languageserver.filetypes": {
     // lint `sh` (includes `bash`) files
-    "sh": "shellcheck",
-    "vim": "vint"
+    "sh": "shellcheck"
   },
   "diagnostic-languageserver.formatFiletypes": {
     // format `sh` (includes `bash`) files using formatter defined below

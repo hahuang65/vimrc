@@ -4,7 +4,7 @@ let g:coc_global_extensions = [
   \ 'coc-git',
   \ 'coc-gitignore',
   \ 'coc-json',
-  \ 'coc-rls',
+  \ 'coc-rust-analyzer',
   \ 'coc-sh',
   \ 'coc-solargraph',
   \ 'coc-sql',
