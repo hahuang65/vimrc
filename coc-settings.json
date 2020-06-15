@@ -1,7 +1,7 @@
 {
-  "codeLens.enable": true,
   "git.addGBlameToVirtualText": true,
   "rust-analyzer.checkOnSave.command": "clippy",
+  "solargraph.diagnostics": true,
   "diagnostic-languageserver.filetypes": {
     // lint `sh` (includes `bash`) files
     "sh": "shellcheck"
