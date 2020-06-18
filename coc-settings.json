@@ -1,7 +1,4 @@
 {
-  "git.addGBlameToVirtualText": true,
-  "rust-analyzer.checkOnSave.command": "clippy",
-  "solargraph.diagnostics": true,
   "diagnostic-languageserver.filetypes": {
     // lint `sh` (includes `bash`) files
     "sh": "shellcheck"
@@ -21,5 +18,11 @@
       // should be split into two strings, the flag and then the value
       "args": ["-i", "2", "-bn", "-ci", "-sr"]
     }
-  }
+  },
+  "git.addGBlameToVirtualText": true,
+  "python.linting.pylintEnabled": false,
+  "python.linting.flake8Enabled": true,
+  "python.linting.enabled": true,
+  "rust-analyzer.checkOnSave.command": "clippy",
+  "solargraph.diagnostics": true
 }
