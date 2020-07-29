@@ -119,6 +119,7 @@ set wildignore+=*sass-cache*
 set wildignore+=*DS_Store*
 set wildignore+=vendor/rails/**
 set wildignore+=vendor/cache/**
+set wildignore+=node_modules/**
 set wildignore+=*.gem
 set wildignore+=log/**
 set wildignore+=tmp/**
