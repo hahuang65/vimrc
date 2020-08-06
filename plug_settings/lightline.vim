@@ -13,14 +13,10 @@ let g:lightline = {
 \   },
 \   'component_function': {
 \     'readonly': 'LightlineReadOnly',
-\     'gitstatus': 'LightlineGitStatus',
+\     'gitstatus': 'FugitiveHead',
 \   }
 \ }
 
 function! LightlineReadonly()
   return &readonly && &filetype !=# 'help' ? 'RO' : ''
-endfunction
-
-function! LightlineGitStatus() abort
-  return get(g:, 'coc_git_status', '')
 endfunction
