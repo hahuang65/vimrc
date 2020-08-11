@@ -7,4 +7,3 @@ if [ ! -f "${HOME}/.vim/autoload/plug.vim" ]; then
 fi
 
 ln -sf "${PWD}/vimrc" "${HOME}/.vimrc"
-ln -sf "${PWD}/coc-settings.json" "${HOME}/.vim"

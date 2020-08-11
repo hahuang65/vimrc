@@ -1,7 +1,6 @@
 " == Leader Keys =============================================================
 " Must happen before plugins load so all the settings can be set accordingly
 let mapleader = ' '
-let maplocalleader = "\\"
 
 " == Useful Variables ========================================================
 " Figure out the current OS. Used for certain settings
@@ -217,8 +216,6 @@ xnoremap >  >gv
 noremap Y y$
 
 " == Configuration Convenience ===============================================
-nnoremap <leader>ev :vsplit $MYVIMRC<cr>
-nnoremap <leader>sv :source $MYVIMRC<cr>
 nnoremap <leader>pi :source $MYVIMRC \| :PlugInstall<CR>
 nnoremap <leader>pu :PlugUpdate<CR>
 
