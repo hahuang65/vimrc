@@ -16,6 +16,7 @@ Plug 'junegunn/limelight.vim'
 Plug 'justinmk/vim-dirvish'
 Plug 'kshenoy/vim-signature'
 Plug 'ludovicchabant/vim-gutentags'
+Plug 'mhinz/vim-signify'
 Plug 'rhysd/committia.vim'
 Plug 'romainl/vim-cool'
 Plug 'segeljakt/vim-silicon' " Requires that silicon is installed
