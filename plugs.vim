@@ -18,6 +18,7 @@ Plug 'justinmk/vim-dirvish'
 Plug 'kshenoy/vim-signature'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'mattn/vim-lsp-settings' " Make LSP easier to install for vim-lsp
+Plug 'maximbaz/lightline-ale'
 Plug 'mhinz/vim-signify'
 Plug 'prabirshrestha/async.vim'
 Plug 'prabirshrestha/asyncomplete.vim'
