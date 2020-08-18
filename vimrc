@@ -1,6 +1,7 @@
 " == Leader Keys =============================================================
 " Must happen before plugins load so all the settings can be set accordingly
 let mapleader = ' '
+let localleader = '\'
 
 " == Useful Variables ========================================================
 " Figure out the current OS. Used for certain settings
