@@ -6,12 +6,14 @@ let g:ale_disable_lsp = 1
 let g:ale_linters = {
   \ 'ruby': ['standardrb'],
   \ 'elixir': ['credo', 'elixir-ls'],
+  \ 'python': ['flake8', 'pylint'],
   \ 'rust': ['cargo', 'rls'],
   \ 'vim': ['vint']
 \ }
 
 let g:ale_fixers = {
   \ '*': ['remove_trailing_lines', 'trim_whitespace'],
+  \ 'python': ['autopep8', 'remove_trailing_lines', 'trim_whitespace'],
   \ 'ruby': ['standardrb', 'remove_trailing_lines', 'trim_whitespace'],
   \ 'vim': ['remove_trailing_lines', 'trim_whitespace']
 \ }
