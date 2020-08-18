@@ -143,19 +143,6 @@ set splitbelow " Split towards bottom
 set splitright " Split towards right
 
 " == Mappings ================================================================
-
-" -- Disable Arrow Key Movement ----------------------------------------------
-inoremap <up> <nop>
-inoremap <down> <nop>
-inoremap <left> <nop>
-inoremap <right> <nop>
-
-" -- Use Arrow Key for resizing with animate.vim -----------------------------
-nnoremap <silent> <Up>    :call animate#window_delta_height(10)<CR>
-nnoremap <silent> <Down>  :call animate#window_delta_height(-10)<CR>
-nnoremap <silent> <Left>  :call animate#window_delta_width(10)<CR>
-nnoremap <silent> <Right> :call animate#window_delta_width(-10)<CR>
-
 " -- Window Movement ---------------------------------------------------------
 nnoremap <silent> <c-k> :wincmd k<CR>
 nnoremap <silent> <c-j> :wincmd j<CR>
@@ -165,13 +152,6 @@ tnoremap <C-k> <C-w>k
 tnoremap <C-j> <C-w>j
 tnoremap <C-h> <C-w>h
 tnoremap <C-l> <C-w>l
-
-" Hides all other windows except the current
-nnoremap <leader>o :only <CR>
-
-" -- File Manipulation -------------------------------------------------------
-" Edit file in same directory as current
-nnoremap <leader>e :edit <C-R>=expand('%:p:h') . '/'<CR>
 
 " -- Folds -------------------------------------------------------------------
 " Toggle folding for current position with Tab
@@ -218,20 +198,6 @@ noremap Y y$
 " == Configuration Convenience ===============================================
 nnoremap <leader>pi :source $MYVIMRC \| :PlugInstall<CR>
 nnoremap <leader>pu :PlugUpdate<CR>
-
-" == Auto Commands ===========================================================
-
-" -- Trim Whitespace Before Save ---------------------------------------------
-function! TrimWhiteSpace()
-  let l = line('.')
-  let c = col('.')
-  %s/\s\+$//e
-  call cursor(l, c)
-endfunction
-
-augroup TrimWhiteSpace
-  autocmd BufWritePre * :call TrimWhiteSpace()
-augroup END
 
 " == Plugin Settings =========================================================
 for fpath in split(globpath('~/.dotfiles/vim/plug_settings', '*.vim'), '\n')
