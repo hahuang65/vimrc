@@ -30,6 +30,7 @@ if os ==# 'Darwin'
 endif
 
 colorscheme dracula
+set termguicolors
 
 " -- File Formats ------------------------------------------------------------
 set encoding=utf-8           " Force UTF-8 as standard encoding
